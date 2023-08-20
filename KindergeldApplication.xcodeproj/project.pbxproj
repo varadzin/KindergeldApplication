@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		398C3F632A1106FD00F22F2A /* ams-swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 398C3F622A1106FD00F22F2A /* ams-swiftlint.yml */; };
+		398C3F652A1109FD00F22F2A /* LanguageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F642A1109FD00F22F2A /* LanguageButton.swift */; };
+		398C3F7A2A11220B00F22F2A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 398C3F7C2A11220B00F22F2A /* Localizable.strings */; };
+		398C3F822A11384200F22F2A /* KindergeldTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F812A11384200F22F2A /* KindergeldTextField.swift */; };
+		398C3F842A113E4700F22F2A /* BigCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F832A113E4700F22F2A /* BigCheckmark.swift */; };
+		398C3F862A114C8500F22F2A /* RedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F852A114C8500F22F2A /* RedButtonStyle.swift */; };
+		398C3F882A11508B00F22F2A /* PayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F872A11508B00F22F2A /* PayViewModel.swift */; };
+		398C3F8A2A142B4600F22F2A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F892A142B4600F22F2A /* CustomTextField.swift */; };
+		398C3F8C2A1558D700F22F2A /* PayDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F8B2A1558D700F22F2A /* PayDaysView.swift */; };
+		398C3F8F2A155C8000F22F2A /* PayTermsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F8E2A155C8000F22F2A /* PayTermsData.swift */; };
+		398C3F942A1574FD00F22F2A /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F932A1574FD00F22F2A /* HideKeyboard.swift */; };
+		39BAA3E72A0D7290006D58D3 /* KindergeldApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA3E62A0D7290006D58D3 /* KindergeldApplicationApp.swift */; };
+		39BAA3E92A0D7290006D58D3 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA3E82A0D7290006D58D3 /* StartView.swift */; };
+		39BAA3EB2A0D7291006D58D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA3EA2A0D7291006D58D3 /* Assets.xcassets */; };
+		39BAA3EE2A0D7291006D58D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA3ED2A0D7291006D58D3 /* Preview Assets.xcassets */; };
+		39BAA3F52A0D7988006D58D3 /* RedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA3F42A0D7988006D58D3 /* RedButton.swift */; };
+		39BAA3F82A0D8129006D58D3 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA3F72A0D8129006D58D3 /* Checkmark.swift */; };
+		39BAA3FA2A0D87E9006D58D3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA3F92A0D87E9006D58D3 /* Colors.swift */; };
+		39BAA3FC2A0D8E27006D58D3 /* TermsOfUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA3FB2A0D8E27006D58D3 /* TermsOfUseView.swift */; };
+		39BAA3FE2A0D9567006D58D3 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA3FD2A0D9567006D58D3 /* MainTab.swift */; };
+		39BAA4012A0D9A65006D58D3 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA4002A0D9A65006D58D3 /* InfoView.swift */; };
+		39BAA4032A0D9A7A006D58D3 /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA4022A0D9A7A006D58D3 /* PayView.swift */; };
+		39BAA4052A0D9A90006D58D3 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA4042A0D9A90006D58D3 /* FormView.swift */; };
+		39BAA4072A0D9A9C006D58D3 /* PrintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA4062A0D9A9C006D58D3 /* PrintView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		398C3F622A1106FD00F22F2A /* ams-swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "ams-swiftlint.yml"; sourceTree = "<group>"; };
+		398C3F642A1109FD00F22F2A /* LanguageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButton.swift; sourceTree = "<group>"; };
+		398C3F7B2A11220B00F22F2A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		398C3F7D2A11221300F22F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		398C3F7E2A11222E00F22F2A /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		398C3F812A11384200F22F2A /* KindergeldTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergeldTextField.swift; sourceTree = "<group>"; };
+		398C3F832A113E4700F22F2A /* BigCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCheckmark.swift; sourceTree = "<group>"; };
+		398C3F852A114C8500F22F2A /* RedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedButtonStyle.swift; sourceTree = "<group>"; };
+		398C3F872A11508B00F22F2A /* PayViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayViewModel.swift; sourceTree = "<group>"; };
+		398C3F892A142B4600F22F2A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		398C3F8B2A1558D700F22F2A /* PayDaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDaysView.swift; sourceTree = "<group>"; };
+		398C3F8E2A155C8000F22F2A /* PayTermsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayTermsData.swift; sourceTree = "<group>"; };
+		398C3F932A1574FD00F22F2A /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
+		39BAA3E32A0D7290006D58D3 /* KindergeldApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindergeldApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39BAA3E62A0D7290006D58D3 /* KindergeldApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergeldApplicationApp.swift; sourceTree = "<group>"; };
+		39BAA3E82A0D7290006D58D3 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		39BAA3EA2A0D7291006D58D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39BAA3ED2A0D7291006D58D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		39BAA3F42A0D7988006D58D3 /* RedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedButton.swift; sourceTree = "<group>"; };
+		39BAA3F72A0D8129006D58D3 /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
+		39BAA3F92A0D87E9006D58D3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		39BAA3FB2A0D8E27006D58D3 /* TermsOfUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseView.swift; sourceTree = "<group>"; };
+		39BAA3FD2A0D9567006D58D3 /* MainTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		39BAA4002A0D9A65006D58D3 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		39BAA4022A0D9A7A006D58D3 /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
+		39BAA4042A0D9A90006D58D3 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		39BAA4062A0D9A9C006D58D3 /* PrintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39BAA3E02A0D7290006D58D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		398C3F682A1118D600F22F2A /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				398C3F7C2A11220B00F22F2A /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		398C3F8D2A1558EB00F22F2A /* PayView */ = {
+			isa = PBXGroup;
+			children = (
+				39BAA4022A0D9A7A006D58D3 /* PayView.swift */,
+				398C3F872A11508B00F22F2A /* PayViewModel.swift */,
+				398C3F8B2A1558D700F22F2A /* PayDaysView.swift */,
+				398C3F8E2A155C8000F22F2A /* PayTermsData.swift */,
+			);
+			path = PayView;
+			sourceTree = "<group>";
+		};
+		398C3F922A1574D600F22F2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				398C3F932A1574FD00F22F2A /* HideKeyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		39BAA3DA2A0D7290006D58D3 = {
+			isa = PBXGroup;
+			children = (
+				39BAA3E52A0D7290006D58D3 /* KindergeldApplication */,
+				39BAA3E42A0D7290006D58D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39BAA3E42A0D7290006D58D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39BAA3E32A0D7290006D58D3 /* KindergeldApplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39BAA3E52A0D7290006D58D3 /* KindergeldApplication */ = {
+			isa = PBXGroup;
+			children = (
+				398C3F922A1574D600F22F2A /* Extensions */,
+				398C3F682A1118D600F22F2A /* Localizations */,
+				398C3F622A1106FD00F22F2A /* ams-swiftlint.yml */,
+				39BAA3E62A0D7290006D58D3 /* KindergeldApplicationApp.swift */,
+				39BAA3FF2A0D9A33006D58D3 /* Views */,
+				39BAA3F62A0D7B64006D58D3 /* UIElements */,
+				39BAA3EA2A0D7291006D58D3 /* Assets.xcassets */,
+				39BAA3EC2A0D7291006D58D3 /* Preview Content */,
+			);
+			path = KindergeldApplication;
+			sourceTree = "<group>";
+		};
+		39BAA3EC2A0D7291006D58D3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				39BAA3ED2A0D7291006D58D3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		39BAA3F62A0D7B64006D58D3 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				39BAA3F42A0D7988006D58D3 /* RedButton.swift */,
+				398C3F812A11384200F22F2A /* KindergeldTextField.swift */,
+				398C3F892A142B4600F22F2A /* CustomTextField.swift */,
+				398C3F852A114C8500F22F2A /* RedButtonStyle.swift */,
+				398C3F642A1109FD00F22F2A /* LanguageButton.swift */,
+				39BAA3F72A0D8129006D58D3 /* Checkmark.swift */,
+				398C3F832A113E4700F22F2A /* BigCheckmark.swift */,
+				39BAA3F92A0D87E9006D58D3 /* Colors.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		39BAA3FF2A0D9A33006D58D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				398C3F8D2A1558EB00F22F2A /* PayView */,
+				39BAA3E82A0D7290006D58D3 /* StartView.swift */,
+				39BAA4002A0D9A65006D58D3 /* InfoView.swift */,
+				39BAA4042A0D9A90006D58D3 /* FormView.swift */,
+				39BAA4062A0D9A9C006D58D3 /* PrintView.swift */,
+				39BAA3FB2A0D8E27006D58D3 /* TermsOfUseView.swift */,
+				39BAA3FD2A0D9567006D58D3 /* MainTab.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39BAA3E22A0D7290006D58D3 /* KindergeldApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39BAA3F12A0D7291006D58D3 /* Build configuration list for PBXNativeTarget "KindergeldApplication" */;
+			buildPhases = (
+				39BAA3DF2A0D7290006D58D3 /* Sources */,
+				39BAA3E02A0D7290006D58D3 /* Frameworks */,
+				39BAA3E12A0D7290006D58D3 /* Resources */,
+				398C3F612A11069C00F22F2A /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KindergeldApplication;
+			productName = KindergeldApplication;
+			productReference = 39BAA3E32A0D7290006D58D3 /* KindergeldApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39BAA3DB2A0D7290006D58D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					39BAA3E22A0D7290006D58D3 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 39BAA3DE2A0D7290006D58D3 /* Build configuration list for PBXProject "KindergeldApplication" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				sk,
+			);
+			mainGroup = 39BAA3DA2A0D7290006D58D3;
+			productRefGroup = 39BAA3E42A0D7290006D58D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39BAA3E22A0D7290006D58D3 /* KindergeldApplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39BAA3E12A0D7290006D58D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398C3F632A1106FD00F22F2A /* ams-swiftlint.yml in Resources */,
+				398C3F7A2A11220B00F22F2A /* Localizable.strings in Resources */,
+				39BAA3EE2A0D7291006D58D3 /* Preview Assets.xcassets in Resources */,
+				39BAA3EB2A0D7291006D58D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		398C3F612A11069C00F22F2A /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39BAA3DF2A0D7290006D58D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398C3F942A1574FD00F22F2A /* HideKeyboard.swift in Sources */,
+				398C3F842A113E4700F22F2A /* BigCheckmark.swift in Sources */,
+				398C3F822A11384200F22F2A /* KindergeldTextField.swift in Sources */,
+				39BAA4012A0D9A65006D58D3 /* InfoView.swift in Sources */,
+				398C3F862A114C8500F22F2A /* RedButtonStyle.swift in Sources */,
+				398C3F882A11508B00F22F2A /* PayViewModel.swift in Sources */,
+				39BAA3F52A0D7988006D58D3 /* RedButton.swift in Sources */,
+				39BAA4052A0D9A90006D58D3 /* FormView.swift in Sources */,
+				39BAA3FA2A0D87E9006D58D3 /* Colors.swift in Sources */,
+				398C3F8A2A142B4600F22F2A /* CustomTextField.swift in Sources */,
+				39BAA3E92A0D7290006D58D3 /* StartView.swift in Sources */,
+				39BAA3E72A0D7290006D58D3 /* KindergeldApplicationApp.swift in Sources */,
+				398C3F8C2A1558D700F22F2A /* PayDaysView.swift in Sources */,
+				39BAA4072A0D9A9C006D58D3 /* PrintView.swift in Sources */,
+				398C3F652A1109FD00F22F2A /* LanguageButton.swift in Sources */,
+				39BAA3FC2A0D8E27006D58D3 /* TermsOfUseView.swift in Sources */,
+				39BAA4032A0D9A7A006D58D3 /* PayView.swift in Sources */,
+				39BAA3F82A0D8129006D58D3 /* Checkmark.swift in Sources */,
+				398C3F8F2A155C8000F22F2A /* PayTermsData.swift in Sources */,
+				39BAA3FE2A0D9567006D58D3 /* MainTab.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		398C3F7C2A11220B00F22F2A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				398C3F7B2A11220B00F22F2A /* de */,
+				398C3F7D2A11221300F22F2A /* en */,
+				398C3F7E2A11222E00F22F2A /* sk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39BAA3EF2A0D7291006D58D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39BAA3F02A0D7291006D58D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39BAA3F22A0D7291006D58D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KindergeldApplication/Preview Content\"";
+				DEVELOPMENT_TEAM = 95ZHG55NFY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varadzin.KindergeldApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		39BAA3F32A0D7291006D58D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KindergeldApplication/Preview Content\"";
+				DEVELOPMENT_TEAM = 95ZHG55NFY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varadzin.KindergeldApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39BAA3DE2A0D7290006D58D3 /* Build configuration list for PBXProject "KindergeldApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39BAA3EF2A0D7291006D58D3 /* Debug */,
+				39BAA3F02A0D7291006D58D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39BAA3F12A0D7291006D58D3 /* Build configuration list for PBXNativeTarget "KindergeldApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39BAA3F22A0D7291006D58D3 /* Debug */,
+				39BAA3F32A0D7291006D58D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39BAA3DB2A0D7290006D58D3 /* Project object */;
+}

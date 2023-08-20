@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings
+  KindergeldApplication
+
+  Created by Frantisek Varadzin on 14.05.23.
+  
+*/
+
+// MARK: Info View Strings
+"InfoView_title" = "Grundnformation";
+"InfoView_text" = "Ab dem 1. Januar 2023 wird das Kindergeld erneut erhöht.
+Beim Kindergeld ab 2023 werden Zulagen in Höhe von 250 Euro für jedes Kind gezahlt.
+
+Der Kinderfreibetrag richtet sich nach der Anzahl der Kinder:
+für 1 Kind: 250 Euro
+für 2 Kinder: 500 Euro
+für 3 Kinder: 750 Euro
+für 4 Kinder: 1.000 Euro
+";
+
+// MARK: MainTab Strings
+"MainTab_info" = "Info";
+"MainTab_payDays" = "Auszahlungstermine";
+"MainTab_forms" = "Ausfühlen";
+"MainTab_print" = "Formulare Drücken";
+
+// MARK: PayView Strings
+"PayView_title" = "Auszahlungstermine";
+"PayView_subtitle" = "Die Auszahlungstermine zu sehen, tragen Sie die Kindergeldnummer ein.";
+"PayView_placeholder" = "Dein Kindergeld Nummer eintragen";
+"PayView_check" = "Mein Kindergeld Nummer merken";
+"PayView_text" = "Wenn Sie bereits eine Kindergeldnummer haben, tragen Sie im Formular die im Schreiben der Familienkasse aufgeführte Kindergeldnummer ein:
+
+napr. 003FK456789 .
+
+Die Nummer wird Ihnen nach der Antragstellung zugeteilt und Sie finden sie oben rechts auf jedem Dokument der Familienkasse.";
+"PayView_button" = "Termine anzeigen";
+"PayView_alertFK" =  "Die Kindergeldnummer muss die Buchstaben FK enthalten, z. B. 003FK456789";
+"PayView_alert_count" = "Kindergeldnummer sollte genau 11 Zeichen haben, z.B. 003FK456789";
