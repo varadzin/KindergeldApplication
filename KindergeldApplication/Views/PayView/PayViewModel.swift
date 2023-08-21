@@ -56,7 +56,6 @@ class PayViewModel: ObservableObject {
                 kgIsNotCorrect = true
                 alertText = "PayView_alertFK"
                 kgError = .KGLetters
-                
             }
         }
     }
@@ -70,7 +69,6 @@ class PayViewModel: ObservableObject {
             kgHasMoreThan11Char = false
         }
     }
-    // swiftlint:disable:next cyclomatic_complexity
     func setEndNumber(lastChar: String) {
         switch lastChar {
         case "0":
