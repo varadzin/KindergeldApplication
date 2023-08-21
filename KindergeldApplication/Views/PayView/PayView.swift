@@ -91,6 +91,7 @@ extension PayView {
       }
       .buttonStyle(RedButtonStyle(buttonColor: viewModel.buttonEnabled ? .red : .systemGray4))
     .frame(height: 60)
+    .padding(.vertical, 10)
   }
 }
 
