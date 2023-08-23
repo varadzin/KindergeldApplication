@@ -12,7 +12,6 @@ struct PrintView: View {
         NavigationView {
             VStack {
                 Text("Pre žiadosť o Kindergeld potrebuješ nasledovné dokumenty:")
-                   
                 Text("1. Hlavná žiadosť o prídavky")
                     .padding(.vertical, 20)
                     .font(.largeTitle)
@@ -20,14 +19,12 @@ struct PrintView: View {
                     .foregroundColor(.red)
                 Text("Antrag auf Kindergeld KG 1-cz")
                     .font(.caption2)
-                
                 Spacer()
             }
             .background(Color.gray)
-          
             .navigationTitle("Hotové dokumenty")
         }
-        }
+    }
 }
 
 struct PrintView_Previews: PreviewProvider {

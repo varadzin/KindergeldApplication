@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct PayView: View {
-    
+
     @ObservedObject var viewModel: PayViewModel
-    
+
     var body: some View {
         NavigationView {
             ScrollView {
@@ -47,36 +47,36 @@ extension PayView {
             .multilineTextAlignment(.center)
             .padding()
     }
-    
+
     var kindergeldTextfield: some View {
         TextField("PayView_placeholder", text: $viewModel.kindergeldNumber)
             .textFieldStyle(KindergeldTextField())
     }
-    
+
     var saveKindergeldNumber: some View {
-        
+
         HStack {
             Checkmark(active: true)
             Text("PayView_check")
                 .font(.title3)
         }
     }
-    
+
     var alertText: some View {
         Text(viewModel.alertText)
             .foregroundColor(.red)
     }
-    
+
     var text: some View {
         Text("PayView_text")
             .padding(10)
     }
-    
+
     var subtitle: some View {
         Text("PayView_subtitle")
             .padding(10)
     }
-    
+
     var button: some View {
         Button {
             viewModel.showSheet = true
@@ -87,7 +87,7 @@ extension PayView {
         .frame(height: 60)
         .padding(.vertical, 10)
     }
-    
+
     var toolbarItem: some View {
         Button {
             print("Language Button tapped")

@@ -21,9 +21,9 @@ class PayViewModel: ObservableObject {
     @AppStorage("lastCharacterOfKG") var lastCharacterOfKG: String = ""
     @AppStorage("KGnumber") var KGnumber: String = ""
     var lastCharacter: String = ""
-    
+
     private var cancellables = Set<AnyCancellable>()
-    
+
     init() {
         $kindergeldNumber.sink { _ in
             self.readLastNumber(insertedString: self.kindergeldNumber)
@@ -36,6 +36,7 @@ class PayViewModel: ObservableObject {
         }
         .store(in: &cancellables)
     }
+    // swiftlint: disable: line_length
     func readLastNumber(insertedString: String) {
         if self.kindergeldNumber.count == 11 {
             let char = self.kindergeldNumber[self.kindergeldNumber.index(self.kindergeldNumber.startIndex, offsetBy: 10)]
@@ -45,11 +46,11 @@ class PayViewModel: ObservableObject {
             print("last character z readLastNumber: \(self.lastCharacterOfKG)")
         }
     }
-    
+
     func checkFKInString(insertedString: String) {
         if kindergeldNumber.count == 5 {
-            let char4 = self.kindergeldNumber[self.kindergeldNumber.index(self.kindergeldNumber.startIndex, offsetBy: 3)]
-            let char5 = self.kindergeldNumber[self.kindergeldNumber.index(self.kindergeldNumber.startIndex, offsetBy: 4)]
+        let char4 = self.kindergeldNumber[self.kindergeldNumber.index(self.kindergeldNumber.startIndex, offsetBy: 3)]
+    let char5 = self.kindergeldNumber[self.kindergeldNumber.index(self.kindergeldNumber.startIndex, offsetBy: 4)]
             let kgIsCorrect = char4 == "F" || char4 == "f" && char5 == "K" || char5 == "k"
             if kgIsCorrect { kgIsNotCorrect = false
             } else {
@@ -59,7 +60,7 @@ class PayViewModel: ObservableObject {
             }
         }
     }
-    
+
     func kgHas11Char(insertedString: String) {
         if kindergeldNumber.count > 11 {
             kgHasMoreThan11Char = true
@@ -69,6 +70,7 @@ class PayViewModel: ObservableObject {
             kgHasMoreThan11Char = false
         }
     }
+    // swiftlint: disable: cyclomatic_complexity
     func setEndNumber(lastChar: String) {
         switch lastChar {
         case "0":

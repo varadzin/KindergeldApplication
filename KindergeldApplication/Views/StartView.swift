@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StartView: View {
-    
+
     @State private var checkmarkActive: Bool = false
     @State private var showSheet: Bool = false
     var body: some View {
@@ -29,7 +29,7 @@ struct StartView: View {
 }
 
 extension StartView {
-    
+
     var backgroundImage: some View {
         Image("startImage")
             .resizable()
@@ -37,13 +37,13 @@ extension StartView {
             .scaledToFit()
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     }
-    
+
     var logo: some View {
         Image("logo")
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
     }
-    
+
     var button: some View {
         NavigationLink {
             MainTab()
@@ -54,7 +54,7 @@ extension StartView {
         .padding(.horizontal, 10)
         //    .disabled(checkmarkActive ? false : true)
     }
-    
+
     var disclaimer: some View {
         HStack {
             Checkmark(active: checkmarkActive)
