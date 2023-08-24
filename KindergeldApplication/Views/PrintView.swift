@@ -21,7 +21,6 @@ struct PrintView: View {
                     .font(.caption2)
                 Spacer()
             }
-            .background(Color.gray)
             .navigationTitle("Hotové dokumenty")
         }
     }
