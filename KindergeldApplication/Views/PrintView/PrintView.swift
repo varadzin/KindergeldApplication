@@ -13,43 +13,59 @@ struct PrintView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-           titleAndSubtitle()
-                
-                    HStack {
-                        documentButton(buttonImage: "magnifyingglass", buttonText: "prezrieť dokument", buttonType: .viewDocument)
-                        documentButton(buttonImage: "paperplane.fill", buttonText: "poslať dokument", buttonType: .sendDocument)
-                        
-                        documentButton(buttonImage: "printer.fill", buttonText: "tlačiť dokument", buttonType: .printDocument)
-                        }
-                    Spacer()
+            ScrollView {
+           Text("Pre žiadosť o Kindergeld potrebuješ dokumenty:")
+                        .padding(.horizontal, 10)
+                        .padding(.top, 30)
+                        .frame(idealWidth: 300)
+                    VStack {
+                        titleAndSubtitle(title: "1. Hlavná žiadosť o prídavky", subtitle: "Antrag auf Kindergeld KG 1-cz")
+                        documentImage()
+                        buttons(documentID: 1)
+                        Spacer(minLength: 30)
+                    }
+                 .padding(.horizontal, 10)
+                    .padding(.vertical, 20)
+                    .background(Color.systemGray6)
+                    
+                VStack(alignment: .leading) {
+                        titleAndSubtitle(title: "2.Príloha Dieťa", subtitle: "Anlage Kind zum Kindergeldantrag (KG 1-cz Anlage Kind) ")
+                        documentImage()
+                        buttons(documentID: 2)
+                        Spacer()
+                    }
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 20)
+                    
+                VStack(alignment: .leading) {
+                        titleAndSubtitle(title: "3.Príloha Zahraničie", subtitle: "Anlage Ausland zum Antrag auf deutsches Kindergeld(KG 51-cz Ausland)")
+                        documentImage()
+                        buttons(documentID: 3)
+                        Spacer()
+                    }
+                    .padding(.horizontal, 10)
+                    .background(Color.systemGray6)
                 }
-                .padding(.horizontal, 10)
+                
                 .navigationTitle("Hotové dokumenty")
             }
-            
-          
         }
     }
 
 
 extension PrintView {
     
-    func titleAndSubtitle() -> some View {
+    func titleAndSubtitle(title: String, subtitle: String) -> some View {
         VStack(alignment: .leading) {
-            Text("Pre žiadosť o Kindergeld potrebuješ dokumenty:")
-                .padding(.horizontal, 10)
-                .frame(idealWidth: 300)
-      Text("1. Hlavná žiadosť o prídavky")
-                    .padding(.vertical, 10)
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(.red)
-                Text("Antrag auf Kindergeld KG 1-cz")
-                    .font(.caption2)
-                    .padding(.leading, 10)
-            
-        }
+                Text(title)
+                .padding(.vertical, 10)
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.red)
+            Text(subtitle)
+                .font(.caption2)
+                .padding(.leading, 10)
+            }
     }
     
     func documentImage() -> some View {
@@ -61,6 +77,16 @@ extension PrintView {
         }
         .frame(maxWidth: .infinity)
         .frame(height: 100)
+    }
+    
+    
+    func buttons(documentID: Int) -> some View {
+        HStack {
+            documentButton(buttonImage: "magnifyingglass", buttonText: "prezrieť dokument", buttonType: .viewDocument(documentID))
+            documentButton(buttonImage: "paperplane.fill", buttonText: "poslať dokument", buttonType: .sendDocument(documentID))
+            
+            documentButton(buttonImage: "printer.fill", buttonText: "tlačiť dokument", buttonType: .printDocument(documentID))
+        }
     }
     
 }

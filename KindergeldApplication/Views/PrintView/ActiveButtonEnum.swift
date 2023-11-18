@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum ActiveButton {
+enum ActiveButton: Equatable {
     case none
-    case viewDocument
-    case sendDocument
-    case printDocument
+    case viewDocument(Int)
+    case sendDocument(Int)
+    case printDocument(Int)
 }
