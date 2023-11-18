@@ -7,16 +7,16 @@
 # https://github.com/realm/SwiftLint/blob/master/Rules.md
 
 
-# AMS SwiftLint configuration
+#   SwiftLint configuration
 #
-# The AMS SwiftLint configuration can be printed to the terminal:
-# swiftlint rules --config <path-to-ios-environment>/ams-swiftlint.yml
+# The   SwiftLint configuration can be printed to the terminal:
+# swiftlint rules --config <path-to-ios-environment>/ -swiftlint.yml
 #
-# A general overview of the AMS SwiftLint configuration can be found here:
-# https://wiki.adesso-mobile.de/pages/viewpage.action?pageId=61574411
+# A general overview of the   SwiftLint configuration can be found here:
+# https:// wikipedia.com/pages/viewpage.action?pageId=61574411
 #
 # An overview of matching Swiftlint rules to SonarQube Issue can be found here:
-# https://wiki.adesso-mobile.de/display/SOF/AMS+Indikatoren
+# https:// wikipedia.com/display/SOF/ +Indikatoren
 
 
 included:
@@ -144,11 +144,11 @@ opt_in_rules:
 anyobject_protocol:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-76
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-76
 array_init:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-02
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-02
 attributes:
   severity: warning
   always_on_same_line:
@@ -162,11 +162,11 @@ attributes:
     - "@IBDesignable"
 
 # Gültig ab Swift 3.2. Für Altprojekte kann diese Regel explizit überschrieben werden.
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-77
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-77
 block_based_kvo:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-32
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-32
 # class_delegate_protocol:
 #   severity: error
 
@@ -174,49 +174,49 @@ closure_body_length:
   warning: 20
   error: 30
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-65
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-65
 closing_brace:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-08
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-08
 closure_end_indentation:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-33
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-33
 closure_parameter_position:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-04
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-04
 closure_spacing:
   severity: error
 
 collection_alignment:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-15
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-15
 colon:
   severity: error
   flexible_right_spacing: false
   apply_to_dictionaries: true
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-62
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-62
 comma:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-06
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-06
 compiler_protocol_init:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-43
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-43
 conditional_returns_on_newline:
   severity: error
   if_only: true
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-78
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-78
 contains_over_first_not_nil:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-57
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-57
 control_statement:
   severity: error
   
@@ -235,11 +235,11 @@ discouraged_optional_collection:
 duplicate_imports:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-51
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-51
 # custom_rules:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-74
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-74
 cyclomatic_complexity:
   # Community Standard
   warning: 10
@@ -248,7 +248,7 @@ cyclomatic_complexity:
   # Aktiv, da Regelverstöße in Switches erfahrungsgemäß oft False Positives sind
   ignores_case_statements: true
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-80
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-80
 discouraged_direct_init:
   severity: error
   types:
@@ -257,26 +257,26 @@ discouraged_direct_init:
     - UIScreen
     - UIApplication
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-22
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-22
 dynamic_inline:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-58
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-58
 empty_count:
   severity: error
 
 empty_string:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-81
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-81
 empty_enum_arguments:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-10
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-10
 empty_parameters:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-11
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-11
 empty_parentheses_with_trailing_closure:
   severity: error
 
@@ -286,35 +286,35 @@ empty_xctest_method:
 # explicit_acl:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-82
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-82
 # explicit_enum_raw_value:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-19
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-19
 # explicit_init:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-83
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-83
 # explicit_top_level_acl:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-84
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-84
 # explicit_type_interface:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-85
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-85
 # extension_access_modifier:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-86
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-86
 fallthrough:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-87
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-87
 fatal_error_message:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-40
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-40
 # file_header:
 #   severity: warning
 #   forbidden_pattern:
@@ -322,7 +322,7 @@ fatal_error_message:
 #   required_pattern:
 #   required_string:
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-72
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-72
 file_length:
   warning: 1000
   error: 1000
@@ -332,27 +332,27 @@ file_length:
 #   severity: warning
 #   excluded: [main.swift]
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-21
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-21
 first_where:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-88
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-88
 for_where:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-63
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-63
 force_cast:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-66
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-66
 force_try:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-46
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-46
 force_unwrapping:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-56
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-56
 function_body_length:
   warning: 40
   error: 40
@@ -360,12 +360,12 @@ function_body_length:
 function_default_parameter_at_end:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-69
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-69
 function_parameter_count:
   warning: 5
   error: 5
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-89
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-89
 # generic_type_name:
 #   min_length:
 #     warning: 0
@@ -380,7 +380,7 @@ function_parameter_count:
 identical_operands:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-55
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-55
 identifier_name:
   min_length:
     warning: 3
@@ -396,66 +396,66 @@ identifier_name:
 inert_defer:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-07
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-07
 implicit_getter:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-90
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-90
 implicit_return:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-91
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-91
 implicitly_unwrapped_optional:
   severity: error
   mode: "all_except_iboutlets" # Values: all | all_except_iboutlets
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-92
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-92
 is_disjoint:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-93
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-93
 joined_default_parameter:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-25
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-25
 # large_tuple:
 #   warning: 4
 
 last_where:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-52
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-52
 leading_whitespace:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-45
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-45
 legacy_cggeometry_functions:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-71
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-71
 # Konfiguriert als Fehler, weil veraltet.
 legacy_constant:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-70
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-70
 legacy_constructor:
   severity: error
 
 legacy_hashing:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-03
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-03
 legacy_nsgeometry_functions:
   severity: error
 
 legacy_random:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-116
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-116
 let_var_whitespace:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-47
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-47
 line_length:
   warning: 250
   error: 350
@@ -463,18 +463,18 @@ line_length:
   ignores_function_declarations: false
   ignores_comments: true
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-94
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-94
 literal_expression_end_indentation:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-30
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-30
 mark:
   severity: warning
 
 missing_docs:
   warning: [open, public, internal]
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-95
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-95
 multiline_arguments:
   severity: error
   first_argument_location: "any_line" # Values: any_line | same_line | next_line
@@ -488,44 +488,44 @@ multiline_function_chains:
 multiline_literal_brackets:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-96
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-96
 multiline_parameters:
   severity: error
 
 multiline_parameters_brackets:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-97
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-97
 # multiple_closures_with_trailing_closure:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-53
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-53
 nesting:
   type_level:
     warning: 2
   function_level:
     warning: 3
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-39
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-39
 # nimble_operator:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-98
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-98
 # no_extension_access_modifier:
 #   severity: warning
 
 # no_fallthrough_only:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-99
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-99
 # no_grouping_extension:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-100
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-100
 # notification_center_detachment:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-101
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-101
 # number_separator:
 #   severity: warning
 #   minimum_length: 0
@@ -533,34 +533,34 @@ nesting:
 nslocalizedstring_key:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-34
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-34
 # object_literal:
 #   severity: warning
 #   image_literal: true
 #   color_literal: true
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-50
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-50
 opening_brace:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-16
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-16
 operator_usage_whitespace:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-48
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-48
 operator_whitespace:
   severity: error
 
 # override_in_extension:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-28
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-28
 overridden_super_call:
   severity: error
   # excluded:
   # included:
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-102
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-102
 pattern_matching_keywords:
   severity: error
 
@@ -571,30 +571,30 @@ pattern_matching_keywords:
 private_action:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-41
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-41
 private_outlet:
   severity: error
   # Alternativ zu private reicht ein privater Setter
   allow_private_set: true
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-103
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-103
 # private_over_fileprivate:
 #   severity: warning
 #   # Extensions innerhalb einer Datei werden ebenfalls berücksichtigt
 #   validate_extensions: true
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-12
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-12
 private_unit_test:
   severity: warning
   regex: "XCTestCase"
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-37
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-37
 prohibited_super_call:
   severity: error
   # excluded:
   # included:
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-104
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-104
 # protocol_property_accessors_order:
 #   severity: warning
 
@@ -602,56 +602,56 @@ prohibited_super_call:
 # quick_discouraged_call:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-105
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-105
 redundant_discardable_let:
   severity: error
 
 redundant_objc_attribute:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-18
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-18
 # Deaktiviert, da es zumindest ein Szenario gibt, in dem man es tun würde und dieser Fall der Regelfall sein dürfte (doppelte Optionals).
 # redundant_nil_coalescing:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-27
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-27
 redundant_optional_initialization:
   severity: error
 
 # redundant_set_access_control:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-35
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-35
 redundant_string_enum_value:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-14
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-14
 redundant_void_return:
   severity: error
 
 # required_enum_case:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-68
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-68
 return_arrow_whitespace:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-44
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-44
 shorthand_operator:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-106
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-106
 single_test_class:
   severity: error
 
 sorted_first_last:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-42
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-42
 # sorted_imports:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-64
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-64
 statement_position:
   severity: error
   # Ein Zeilenumbruch vor dem else ("uncuddled") wird nicht erlaubt
@@ -660,28 +660,28 @@ statement_position:
 static_operator:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-107
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-107
 # strict_fileprivate:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-108
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-108
 superfluous_disable_command:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-109
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-109
 switch_case_alignment:
   severity: error
   indented_cases: false
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-20
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-20
 switch_case_on_newline:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-23
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-23
 syntactic_sugar:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-73
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-73
 # Konfiguriert als Warnung, da ein TODO mit Verweis auf ein Ticket (!) sinnvoll sein kann.
 todo:
   severity: warning
@@ -689,25 +689,25 @@ todo:
 toggle_bool:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-97
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-97
 trailing_closure:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-26
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-26
 trailing_comma:
   severity: error
   # Hinter dem letzten Element in Array und Dictionary Literalen soll kein Komma stehen
   mandatory_comma: false
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-61
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-61
 # trailing_newline:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-75
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-75
 trailing_semicolon:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-59
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-59
 # Xcode kann Trailing Whitespace automatisch trimmen, siehe "Preferences -> Text Editing -> While editing: Automatically trim trailing whitespace" (Xcode 9)
 trailing_whitespace:
   severity: warning
@@ -715,13 +715,13 @@ trailing_whitespace:
   ignores_comments: true
   ignores_case_statements: true
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-54
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-54
 # Deaktiviert, da file_length und function_body_length geeigneter erscheinen.
 # type_body_length:
 #   warning: 1000
 #   error: 1000
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-49
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-49
 type_name:
   min_length:
     warning: 3
@@ -737,46 +737,46 @@ type_name:
 # unavailable_function:
 #   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-111
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-111
 unneeded_break_in_switch:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-112
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-112
 unneeded_parentheses_in_closure_argument:
   severity: error
 
 untyped_error_in_catch:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-31
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-31
 unused_closure_parameter:
   severity: error
 
 unused_control_flow_label:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-24
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-24
 unused_enumerated:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-113
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-113
 unused_optional_binding:
   severity: error
   ignore_optional_try: false
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-09
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-09
 valid_ibinspectable:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-29
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-29
 vertical_parameter_alignment:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-114
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-114
 vertical_parameter_alignment_on_call:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-13
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-13
 vertical_whitespace:
   severity: error
   max_empty_lines: 2
@@ -784,15 +784,15 @@ vertical_whitespace:
 vertical_whitespace_closing_braces:
   severity: warning
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-38
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-38
 void_return:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-01
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-01
 weak_delegate:
   severity: error
 
-# https://wiki.adesso-mobile.de/requirements/SOF/AMS-IND-SwiftLint-115
+# https:// wikipedia.com/requirements/SOF/ -IND-SwiftLint-115
 # xctfail_message:
 #   severity: warning
 
