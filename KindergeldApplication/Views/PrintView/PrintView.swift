@@ -15,14 +15,7 @@ struct PrintView: View {
         NavigationView {
             VStack {
            titleAndSubtitle()
-                    HStack {
-                        Image(systemName: "doc.text.fill")
-                            .foregroundColor(.red)
-                            .font(.system(size: 50))
-                        Text("Vyplnene na 75%")
-                    }
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 100)
+                
                     HStack {
                         documentButton(buttonImage: "magnifyingglass", buttonText: "prezrieť dokument", buttonType: .viewDocument)
                         documentButton(buttonImage: "paperplane.fill", buttonText: "poslať dokument", buttonType: .sendDocument)
@@ -58,6 +51,18 @@ extension PrintView {
             
         }
     }
+    
+    func documentImage() -> some View {
+        HStack {
+            Image(systemName: "doc.text.fill")
+                .foregroundColor(.red)
+                .font(.system(size: 50))
+            Text("Vyplnene na 75%")
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 100)
+    }
+    
 }
 
 #Preview {
