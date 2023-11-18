@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainTab: View {
   @State private var selectedTabIndex = 0
+
   var body: some View {
     TabView(selection: $selectedTabIndex) {
       InfoView()
@@ -26,7 +27,7 @@ struct MainTab: View {
           Label("MainTab_forms", systemImage: "highlighter")
         }
         .tag(2)
-      PrintView()
+        PrintView()
         .tabItem {
           Label("MainTab_print", systemImage: "doc.badge.arrow.up")
         }

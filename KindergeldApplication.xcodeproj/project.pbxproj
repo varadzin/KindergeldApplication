@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295F62BB2B0936980079497F /* DocumentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62BA2B0936980079497F /* DocumentButton.swift */; };
+		295F62BE2B093B080079497F /* AcitveButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62BD2B093B080079497F /* AcitveButtonEnum.swift */; };
 		398C3F652A1109FD00F22F2A /* LanguageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F642A1109FD00F22F2A /* LanguageButton.swift */; };
 		398C3F7A2A11220B00F22F2A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 398C3F7C2A11220B00F22F2A /* Localizable.strings */; };
 		398C3F822A11384200F22F2A /* KindergeldTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F812A11384200F22F2A /* KindergeldTextField.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		295F62BA2B0936980079497F /* DocumentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentButton.swift; sourceTree = "<group>"; };
+		295F62BD2B093B080079497F /* AcitveButtonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcitveButtonEnum.swift; sourceTree = "<group>"; };
 		398C3F642A1109FD00F22F2A /* LanguageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButton.swift; sourceTree = "<group>"; };
 		398C3F7B2A11220B00F22F2A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		398C3F7D2A11221300F22F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -72,6 +76,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		295F62B92B09366E0079497F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				39BAA3F42A0D7988006D58D3 /* RedButton.swift */,
+				398C3F642A1109FD00F22F2A /* LanguageButton.swift */,
+				295F62BA2B0936980079497F /* DocumentButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		295F62BC2B093AF20079497F /* PrintView */ = {
+			isa = PBXGroup;
+			children = (
+				39BAA4062A0D9A9C006D58D3 /* PrintView.swift */,
+				295F62BD2B093B080079497F /* AcitveButtonEnum.swift */,
+			);
+			path = PrintView;
+			sourceTree = "<group>";
+		};
 		398C3F682A1118D600F22F2A /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,11 +163,10 @@
 		39BAA3F62A0D7B64006D58D3 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
-				39BAA3F42A0D7988006D58D3 /* RedButton.swift */,
+				295F62B92B09366E0079497F /* Buttons */,
 				398C3F812A11384200F22F2A /* KindergeldTextField.swift */,
 				398C3F892A142B4600F22F2A /* CustomTextField.swift */,
 				398C3F852A114C8500F22F2A /* RedButtonStyle.swift */,
-				398C3F642A1109FD00F22F2A /* LanguageButton.swift */,
 				39BAA3F72A0D8129006D58D3 /* Checkmark.swift */,
 				398C3F832A113E4700F22F2A /* BigCheckmark.swift */,
 				39BAA3F92A0D87E9006D58D3 /* Colors.swift */,
@@ -155,11 +177,11 @@
 		39BAA3FF2A0D9A33006D58D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				295F62BC2B093AF20079497F /* PrintView */,
 				398C3F8D2A1558EB00F22F2A /* PayView */,
 				39BAA3E82A0D7290006D58D3 /* StartView.swift */,
 				39BAA4002A0D9A65006D58D3 /* InfoView.swift */,
 				39BAA4042A0D9A90006D58D3 /* FormView.swift */,
-				39BAA4062A0D9A9C006D58D3 /* PrintView.swift */,
 				39BAA3FB2A0D8E27006D58D3 /* TermsOfUseView.swift */,
 				39BAA3FD2A0D9567006D58D3 /* MainTab.swift */,
 			);
@@ -273,7 +295,9 @@
 				39BAA4052A0D9A90006D58D3 /* FormView.swift in Sources */,
 				39BAA3FA2A0D87E9006D58D3 /* Colors.swift in Sources */,
 				398C3F8A2A142B4600F22F2A /* CustomTextField.swift in Sources */,
+				295F62BE2B093B080079497F /* AcitveButtonEnum.swift in Sources */,
 				39BAA3E92A0D7290006D58D3 /* StartView.swift in Sources */,
+				295F62BB2B0936980079497F /* DocumentButton.swift in Sources */,
 				39BAA3E72A0D7290006D58D3 /* KindergeldApplicationApp.swift in Sources */,
 				398C3F8C2A1558D700F22F2A /* PayDaysView.swift in Sources */,
 				39BAA4072A0D9A9C006D58D3 /* PrintView.swift in Sources */,
