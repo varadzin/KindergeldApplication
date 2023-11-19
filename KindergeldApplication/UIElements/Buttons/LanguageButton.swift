@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct LanguageButton: View {
-  var body: some View {
+public struct LanguageButton: View {
+ public var body: some View {
     VStack {
       Text("Sprache")
         .font(.system(size: 8))

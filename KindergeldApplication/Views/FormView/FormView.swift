@@ -9,12 +9,32 @@ import SwiftUI
 
 struct FormView: View {
     var body: some View {
-        Text("Form View")
+        NavigationStack {
+            ScrollView {
+                TopStepBarView(step: 1)
+                    .padding(.vertical, 8)
+                Spacer()
+            }
+            
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    toolbarItem
+                }
+            }
+        }
     }
 }
 
-struct FormView_Previews: PreviewProvider {
-    static var previews: some View {
-        FormView()
+extension FormView {
+    var toolbarItem: some View {
+        Button {
+            print("Language Button tapped")
+        } label: {
+            LanguageButton()
+        }
     }
+}
+
+#Preview {
+    FormView()
 }
