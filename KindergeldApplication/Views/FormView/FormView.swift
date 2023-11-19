@@ -9,19 +9,21 @@ import SwiftUI
 
 struct FormView: View {
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ScrollView {
-                TopStepBarView(step: 1)
-                    .padding(.vertical, 8)
-                Spacer()
+                VStack {
+                    TopStepBarView(step: 1)
+                        .padding(.vertical, 8)
+                
+                }
             }
-            
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     toolbarItem
                 }
             }
         }
+      
     }
 }
 
