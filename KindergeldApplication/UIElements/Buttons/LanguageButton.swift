@@ -17,7 +17,7 @@ struct LanguageButton: View {
         .font(.system(size: 8))
         .padding(.bottom, 10)
     }
-    .foregroundColor(.red)
+    .foregroundColor(Color.customRed)
      }
 }
 

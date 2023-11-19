@@ -45,6 +45,7 @@ struct PrintView: View {
                     }
                     .padding(.horizontal, 10)
                     .background(Color.systemGray6)
+                bigButtons()
                 }
                 
                 .navigationTitle("Hotové dokumenty")
@@ -57,21 +58,21 @@ extension PrintView {
     
     func titleAndSubtitle(title: String, subtitle: String) -> some View {
         VStack(alignment: .leading) {
-                Text(title)
+            Text(title)
                 .padding(.vertical, 10)
                 .font(.title)
                 .fontWeight(.bold)
-                .foregroundColor(.red)
+                .foregroundColor(Color.customRed)
             Text(subtitle)
                 .font(.caption2)
                 .padding(.leading, 10)
-            }
+        }
     }
     
     func documentImage() -> some View {
         HStack {
             Image(systemName: "doc.text.fill")
-                .foregroundColor(.red)
+                .foregroundColor(Color.customRed)
                 .font(.system(size: 50))
             Text("Vyplnene na 75%")
         }
@@ -89,6 +90,20 @@ extension PrintView {
         }
     }
     
+    func bigButtons() -> some View {
+        VStack {
+            RedButton(title: "Poslat vsetko spolu", buttonImage: "paperplane.fill")
+                .frame(height: 50)
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 15)
+                .padding(.bottom, 8)
+            RedButton(title: "Tlacit vsetko naraz", buttonImage: "printer.fill")
+                .frame(height: 50)
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 15)
+        }
+        .padding(.vertical, 20)
+    }
 }
 
 #Preview {

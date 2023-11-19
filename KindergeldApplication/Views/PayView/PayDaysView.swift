@@ -25,7 +25,7 @@ extension PayDaysView {
     VStack {
       Text("Výplatné termíny pre číslo:")
       Text(KGnumber)
-        .foregroundColor(.red)
+        .foregroundColor(Color.customRed)
     }
     .font(.largeTitle)
   }

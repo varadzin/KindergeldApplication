@@ -14,7 +14,7 @@ public struct Checkmark: View {
     Image(systemName: active ? "checkmark.circle.fill" : "circle")
       .font(.system(size: 30))
       .fontWeight(.light)
-      .foregroundColor(.red)
+      .foregroundColor(Color.customRed)
    }
 }
 

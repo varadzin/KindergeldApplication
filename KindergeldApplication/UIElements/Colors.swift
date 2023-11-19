@@ -9,6 +9,9 @@ import SwiftUI
 
 extension Color {
 
+  static let customRed = Color(red: 208/255, green: 44/255, blue: 41/255)
+
+    
   // MARK: - Text Colors
   static let lightText = Color(UIColor.lightText)
   static let darkText = Color(UIColor.darkText)

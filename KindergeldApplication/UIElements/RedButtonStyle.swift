@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RedButtonStyle: ButtonStyle {
-  var buttonColor: Color = .red
+  var buttonColor: Color = Color.customRed
 
   func makeBody(configuration: Configuration) -> some View {
     configuration.label

@@ -23,7 +23,7 @@ extension PrintView {
             }
         }
         .frame(width: 100, height: 100)
-        .foregroundColor(activeButton == buttonType ? Color.red : Color.systemGray)
+        .foregroundColor(activeButton == buttonType ? Color.customRed : Color.systemGray)
         .background(Color.systemGray6)
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .shadow(radius: 4)

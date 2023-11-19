@@ -50,7 +50,7 @@ extension StartView {
         } label: {
             Text("Start")
         }
-        .buttonStyle(RedButtonStyle(buttonColor: checkmarkActive ? .red : .systemGray4))
+        .buttonStyle(RedButtonStyle(buttonColor: checkmarkActive ? Color.customRed : .systemGray4))
         .padding(.horizontal, 10)
         //    .disabled(checkmarkActive ? false : true)
     }
@@ -65,7 +65,7 @@ extension StartView {
                 HStack {
                     Text("Čítal/a som")
                     Text("podmienky používania aplikácie")
-                        .foregroundColor(.red)
+                        .foregroundColor(Color.customRed)
                         .fontWeight(.bold)
                 }
                 Text("a jej používaním potvrdzujem svoj súhlas")

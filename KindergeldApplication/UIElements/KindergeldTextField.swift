@@ -15,7 +15,7 @@ struct KindergeldTextField: TextFieldStyle {
       .disableAutocorrection(true)
       .autocapitalization(.none)
       .font(.system(size: 20))
-      .foregroundColor(.red)
+      .foregroundColor(Color.customRed)
       .multilineTextAlignment(.center)
       .padding(10)
       .background(Color.systemGray6)

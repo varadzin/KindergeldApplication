@@ -64,7 +64,7 @@ extension PayView {
 
     var alertText: some View {
         Text(viewModel.alertText)
-            .foregroundColor(.red)
+            .foregroundColor(Color.customRed)
     }
 
     var text: some View {
@@ -83,7 +83,7 @@ extension PayView {
         } label: {
             Text("PayView_button")
         }
-        .buttonStyle(RedButtonStyle(buttonColor: viewModel.buttonEnabled ? .red : .systemGray4))
+        .buttonStyle(RedButtonStyle(buttonColor: viewModel.buttonEnabled ? Color.customRed : .systemGray4))
         .frame(height: 60)
         .padding(.vertical, 10)
     }
