@@ -17,7 +17,7 @@ struct CustomInput: View {
             TextField(placeholder, text: $text)
                 .textFieldStyle(CustomTextField())
             Button(action: action) {
-                Image(systemName: "question.circle")
+                Image(systemName: "questionmark.circle")
                     .font(.largeTitle)
                     .foregroundColor(.customRed)
             }

@@ -9,9 +9,7 @@ import SwiftUI
 
 struct FormView: View {
     
-    @State var manTitle: String = ""
-    @State var manFirstname: String = ""
-    @State var manSurename: String = ""
+    @ObservedObject var viewModel: FormViewModel
     
     var body: some View {
         NavigationView {
@@ -23,6 +21,8 @@ struct FormView: View {
                         explanationText
                         subtitle
                         formTextFields
+                        statusToggle
+                        statusDate
                     }
                     
                 }
@@ -34,7 +34,7 @@ struct FormView: View {
                 }
             }
         }
-        
+        .navigationViewStyle(.stack)
     }
 }
 
@@ -79,14 +79,66 @@ extension FormView {
     
     var formTextFields: some View {
         VStack {
-            CustomInput(placeholder: "Titul", text: $manTitle) {
-                print("go")
-            }
-            }
+            CustomInput(placeholder: "Titul", text: $viewModel.manTitle) { print("go") }
+            CustomInput(placeholder: "Krstné meno", text: $viewModel.manName) { print("go") }
+            CustomInput(placeholder: "Priezvisko", text: $viewModel.manSurname) { print("go") }
+            CustomInput(placeholder: "Rodné priezvisko", text: $viewModel.manMaidenName) { print("go") }
+            CustomInput(placeholder: "Dátum narodenia - DD.MM.RRRR", text: $viewModel.manDateOfBirth) { print("go") }
+            CustomInput(placeholder: "Miesto narodenia - mesto a štát", text: $viewModel.manPlaceOfBirth) { print("go") }
+            segmentPicker
+            CustomInput(placeholder: "Štátna príslušnosť", text: $viewModel.manNationality) { print("go") }
+            CustomInput(placeholder: "Adresa - Ulica a číslo domu ", text: $viewModel.manAddress) { print("go") }
+            CustomInput(placeholder: "Adresa - PSČ, mesto, štát", text: $viewModel.manZipCity) { print("go") }
         }
     }
+    
+    var segmentPicker: some View {
+        HStack {
+            Picker("", selection: $viewModel.selectedSex) {
+                Text("Žiadateľ je muž").tag(0)
+                Text("Žiadateľka je žena").tag(1)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding(.vertical)
+            .frame(maxWidth: 310, alignment: .leading)
+            Spacer()
+        }
+    }
+    
+    var statusToggle: some View {
+        VStack {
+            ForEach(0..<6) { index in
+                Toggle(viewModel.statusText(for: index), isOn: Binding(
+                    get: { viewModel.status == index },
+                    set: { isOn in
+                        if isOn { viewModel.status = index
+                        } else {
+                            viewModel.status = nil
+                        }
+                    }
+                ))
+            }
+        }
+        .frame(maxWidth: 310, alignment: .leading)
+        .padding(.horizontal, 15)
+    }
+    
+    var statusDate: some View {
+        VStack {
+            if viewModel.status != 0 {
+                return AnyView( CustomInput(placeholder: "Od kedy: ", text: $viewModel.statusDate) {
+                    print("gogo")
+                })
+            } else {
+                return AnyView(EmptyView())
+            }
+        }
+        .padding(.vertical, 8)
+    }
+}
+
 
 
 #Preview {
-    FormView()
+    FormView(viewModel: FormViewModel())
 }

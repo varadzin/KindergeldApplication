@@ -36,6 +36,7 @@ private extension InfoView {
                 }
             }
         }
+        .navigationViewStyle(.stack)
         .navigationBarHidden(true)
     }
 }

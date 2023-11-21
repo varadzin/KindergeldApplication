@@ -37,6 +37,7 @@ struct PayView: View {
             }
         }
         .navigationBarHidden(true)
+        .navigationViewStyle(.stack)
     }
 }
 

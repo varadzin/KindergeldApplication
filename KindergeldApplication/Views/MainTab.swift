@@ -22,7 +22,7 @@ struct MainTab: View {
           Label("MainTab_payDays", systemImage: "calendar")
         }
         .tag(1)
-      FormView()
+      FormView(viewModel: FormViewModel())
         .tabItem {
           Label("MainTab_forms", systemImage: "highlighter")
         }

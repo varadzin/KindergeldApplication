@@ -49,7 +49,9 @@ struct PrintView: View {
                 }
                 
                 .navigationTitle("Hotové dokumenty")
+               
             }
+        .navigationViewStyle(.stack)
         }
     }
 
