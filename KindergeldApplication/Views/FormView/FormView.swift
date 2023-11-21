@@ -79,31 +79,13 @@ extension FormView {
     
     var formTextFields: some View {
         VStack {
-            HStack {
-                TextField("Titul", text: $manTitle)
-                    .textFieldStyle(CustomTextField())
-                Button {
-                  print("Title Button tapped")
-                } label: {
-                    Image(systemName: "questionmark.circle")
-                        .font(.largeTitle)
-                        .foregroundColor(.customRed)
-                }
+            CustomInput(placeholder: "Titul", text: $manTitle) {
+                print("go")
             }
-            HStack {
-            TextField("Meno", text: $manFirstname)
-                .textFieldStyle(CustomTextField())
-                Button {
-                   print("Name Button tapped")
-                } label: {
-                    Image(systemName: "questionmark.circle")
-                        .font(.largeTitle)
-                        .foregroundColor(.customRed)
-                }
-                }
+            }
         }
     }
-}
+
 
 #Preview {
     FormView()
