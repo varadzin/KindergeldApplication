@@ -23,6 +23,7 @@ struct FormView: View {
                         formTextFields
                         statusToggle
                         statusDate
+                        nextButton
                     }
                     
                 }
@@ -134,6 +135,14 @@ extension FormView {
             }
         }
         .padding(.vertical, 8)
+    }
+    
+    var nextButton: some View {
+        RedButton(title: "Pokračovať      ->")
+            .frame(height: 60)
+            .frame(maxWidth: .infinity)
+            .padding(.top, 40)
+            .padding(.bottom, 20)
     }
 }
 
