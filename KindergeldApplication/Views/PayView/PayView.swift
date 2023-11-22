@@ -8,25 +8,29 @@
 import SwiftUI
 
 struct PayView: View {
-
+    
     @ObservedObject var viewModel: PayViewModel
-
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading) {
-                    payTitle
                     subtitle
                     kindergeldTextfield
-                    if viewModel.buttonEnabled { saveKindergeldNumber } else { alertText }
+                    if viewModel.buttonEnabled {
+                        saveKindergeldNumber
+                    } else { alertText }
                     text
                     button
+                    
                 }
                 .padding()
             }
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    toolbarItem
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    LanguageButton {
+                        print("Language Button Tapped")
+                    }
                 }
             }
             .sheet(isPresented: $viewModel.showSheet) {
@@ -35,49 +39,43 @@ struct PayView: View {
             .onTapGesture {
                 hideKeyboard()
             }
+            .navigationTitle("PayView_title")
         }
         .navigationBarHidden(true)
         .navigationViewStyle(.stack)
     }
-}
-
-extension PayView {
-    var payTitle: some View {
-        Text("PayView_title")
-            .font(.title)
-            .multilineTextAlignment(.center)
-            .padding()
     }
 
+extension PayView {
     var kindergeldTextfield: some View {
         TextField("PayView_placeholder", text: $viewModel.kindergeldNumber)
             .textFieldStyle(KindergeldTextField())
     }
-
+    
     var saveKindergeldNumber: some View {
-
+        
         HStack {
             Checkmark(active: true)
             Text("PayView_check")
                 .font(.title3)
         }
     }
-
+    
     var alertText: some View {
         Text(viewModel.alertText)
             .foregroundColor(Color.customRed)
     }
-
+    
     var text: some View {
         Text("PayView_text")
             .padding(10)
     }
-
+    
     var subtitle: some View {
         Text("PayView_subtitle")
             .padding(10)
     }
-
+    
     var button: some View {
         Button {
             viewModel.showSheet = true
@@ -87,14 +85,6 @@ extension PayView {
         .buttonStyle(RedButtonStyle(buttonColor: viewModel.buttonEnabled ? Color.customRed : .systemGray4))
         .frame(height: 60)
         .padding(.vertical, 10)
-    }
-
-    var toolbarItem: some View {
-        Button {
-            print("Language Button tapped")
-        } label: {
-            LanguageButton()
-        }
     }
 }
 

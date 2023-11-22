@@ -12,6 +12,11 @@
 		295F62BE2B093B080079497F /* ActiveButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62BD2B093B080079497F /* ActiveButtonEnum.swift */; };
 		295F62C32B0AC2980079497F /* TopStepBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62C22B0AC2980079497F /* TopStepBarView.swift */; };
 		299FC5FB2B0D3C90007A3900 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FC5FA2B0D3C90007A3900 /* FormViewModel.swift */; };
+		29A66CFB2B0E8800000094F0 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66CFA2B0E8800000094F0 /* NextButton.swift */; };
+		29A66CFD2B0E89AC000094F0 /* FormView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66CFC2B0E89AC000094F0 /* FormView2.swift */; };
+		29A66CFF2B0E8B7A000094F0 /* FormView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66CFE2B0E8B7A000094F0 /* FormView3.swift */; };
+		29A66D012B0E9AE2000094F0 /* SingleToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66D002B0E9AE2000094F0 /* SingleToggle.swift */; };
+		29A66D032B0EA16F000094F0 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66D022B0EA16F000094F0 /* BackButton.swift */; };
 		398C3F652A1109FD00F22F2A /* LanguageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F642A1109FD00F22F2A /* LanguageButton.swift */; };
 		398C3F7A2A11220B00F22F2A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 398C3F7C2A11220B00F22F2A /* Localizable.strings */; };
 		398C3F822A11384200F22F2A /* KindergeldTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F812A11384200F22F2A /* KindergeldTextField.swift */; };
@@ -43,6 +48,11 @@
 		295F62BD2B093B080079497F /* ActiveButtonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveButtonEnum.swift; sourceTree = "<group>"; };
 		295F62C22B0AC2980079497F /* TopStepBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStepBarView.swift; sourceTree = "<group>"; };
 		299FC5FA2B0D3C90007A3900 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		29A66CFA2B0E8800000094F0 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
+		29A66CFC2B0E89AC000094F0 /* FormView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView2.swift; sourceTree = "<group>"; };
+		29A66CFE2B0E8B7A000094F0 /* FormView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView3.swift; sourceTree = "<group>"; };
+		29A66D002B0E9AE2000094F0 /* SingleToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleToggle.swift; sourceTree = "<group>"; };
+		29A66D022B0EA16F000094F0 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		398C3F642A1109FD00F22F2A /* LanguageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButton.swift; sourceTree = "<group>"; };
 		398C3F7B2A11220B00F22F2A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		398C3F7D2A11221300F22F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -86,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				39BAA3F42A0D7988006D58D3 /* RedButton.swift */,
+				29A66CFA2B0E8800000094F0 /* NextButton.swift */,
+				29A66D022B0EA16F000094F0 /* BackButton.swift */,
 				398C3F642A1109FD00F22F2A /* LanguageButton.swift */,
 				295F62BA2B0936980079497F /* DocumentButton.swift */,
 			);
@@ -113,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				39BAA4042A0D9A90006D58D3 /* FormView.swift */,
+				29A66CFC2B0E89AC000094F0 /* FormView2.swift */,
+				29A66CFE2B0E8B7A000094F0 /* FormView3.swift */,
 				299FC5FA2B0D3C90007A3900 /* FormViewModel.swift */,
 			);
 			path = FormView;
@@ -124,6 +138,14 @@
 				295F62C22B0AC2980079497F /* TopStepBarView.swift */,
 			);
 			path = TopStepBar;
+			sourceTree = "<group>";
+		};
+		29A66D042B0EA79F000094F0 /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				39BAA4002A0D9A65006D58D3 /* InfoView.swift */,
+			);
+			path = InfoView;
 			sourceTree = "<group>";
 		};
 		398C3F682A1118D600F22F2A /* Localizations */ = {
@@ -203,6 +225,7 @@
 				398C3F832A113E4700F22F2A /* BigCheckmark.swift */,
 				39BAA3F92A0D87E9006D58D3 /* Colors.swift */,
 				2949156E2B0D341500CE447F /* CustomInput.swift */,
+				29A66D002B0E9AE2000094F0 /* SingleToggle.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -213,7 +236,7 @@
 				295F62BF2B0AC2030079497F /* StartView */,
 				295F62BC2B093AF20079497F /* PrintView */,
 				398C3F8D2A1558EB00F22F2A /* PayView */,
-				39BAA4002A0D9A65006D58D3 /* InfoView.swift */,
+				29A66D042B0EA79F000094F0 /* InfoView */,
 				295F62C02B0AC21B0079497F /* FormView */,
 				39BAA3FB2A0D8E27006D58D3 /* TermsOfUseView.swift */,
 				39BAA3FD2A0D9567006D58D3 /* MainTab.swift */,
@@ -318,11 +341,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A66CFB2B0E8800000094F0 /* NextButton.swift in Sources */,
 				398C3F942A1574FD00F22F2A /* HideKeyboard.swift in Sources */,
 				398C3F842A113E4700F22F2A /* BigCheckmark.swift in Sources */,
 				398C3F822A11384200F22F2A /* KindergeldTextField.swift in Sources */,
 				39BAA4012A0D9A65006D58D3 /* InfoView.swift in Sources */,
 				398C3F862A114C8500F22F2A /* RedButtonStyle.swift in Sources */,
+				29A66CFD2B0E89AC000094F0 /* FormView2.swift in Sources */,
 				398C3F882A11508B00F22F2A /* PayViewModel.swift in Sources */,
 				39BAA3F52A0D7988006D58D3 /* RedButton.swift in Sources */,
 				39BAA4052A0D9A90006D58D3 /* FormView.swift in Sources */,
@@ -330,6 +355,8 @@
 				295F62C32B0AC2980079497F /* TopStepBarView.swift in Sources */,
 				299FC5FB2B0D3C90007A3900 /* FormViewModel.swift in Sources */,
 				398C3F8A2A142B4600F22F2A /* CustomTextField.swift in Sources */,
+				29A66D032B0EA16F000094F0 /* BackButton.swift in Sources */,
+				29A66D012B0E9AE2000094F0 /* SingleToggle.swift in Sources */,
 				295F62BE2B093B080079497F /* ActiveButtonEnum.swift in Sources */,
 				39BAA3E92A0D7290006D58D3 /* StartView.swift in Sources */,
 				295F62BB2B0936980079497F /* DocumentButton.swift in Sources */,
@@ -340,6 +367,7 @@
 				39BAA3FC2A0D8E27006D58D3 /* TermsOfUseView.swift in Sources */,
 				39BAA4032A0D9A7A006D58D3 /* PayView.swift in Sources */,
 				39BAA3F82A0D8129006D58D3 /* Checkmark.swift in Sources */,
+				29A66CFF2B0E8B7A000094F0 /* FormView3.swift in Sources */,
 				398C3F8F2A155C8000F22F2A /* PayTermsData.swift in Sources */,
 				39BAA3FE2A0D9567006D58D3 /* MainTab.swift in Sources */,
 				2949156F2B0D341500CE447F /* CustomInput.swift in Sources */,
@@ -495,7 +523,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -529,7 +557,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

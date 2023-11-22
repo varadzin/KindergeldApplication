@@ -23,15 +23,17 @@ struct FormView: View {
                         formTextFields
                         statusToggle
                         statusDate
-                        nextButton
+                        NextButton(destination: FormView2(viewModel: FormViewModel())) {}
                     }
                     
                 }
                 .padding(.horizontal, 15)
             }
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    toolbarItem
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    LanguageButton {
+                        print("Language Button Tapped")
+                    }        
                 }
             }
         }
@@ -40,13 +42,6 @@ struct FormView: View {
 }
 
 extension FormView {
-    var toolbarItem: some View {
-        Button {
-            print("Language Button tapped")
-        } label: {
-            LanguageButton()
-        }
-    }
     
     var topStepBar: some View {
         TopStepBarView(step: 1)
@@ -135,14 +130,6 @@ extension FormView {
             }
         }
         .padding(.vertical, 8)
-    }
-    
-    var nextButton: some View {
-        RedButton(title: "Pokračovať      ->")
-            .frame(height: 60)
-            .frame(maxWidth: .infinity)
-            .padding(.top, 40)
-            .padding(.bottom, 20)
     }
 }
 

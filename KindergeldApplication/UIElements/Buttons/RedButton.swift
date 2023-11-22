@@ -19,7 +19,8 @@ public struct RedButton: View {
         }
         .font(.title)
         .fontWeight(.semibold)
-        .frame(maxWidth: .infinity, maxHeight: 60)
+        .frame(maxWidth: .infinity)
+        .frame(height: 60)
         .background(buttonColor)
         .foregroundColor(.white)
         .cornerRadius(10)

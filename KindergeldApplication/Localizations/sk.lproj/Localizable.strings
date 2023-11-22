@@ -25,14 +25,11 @@ pre 4 deti: 1 000 eur";
 
 // MARK: PayView Strings
 "PayView_title" = "Výplatné termíny";
-"PayView_subtitle" = "Zadaj svoje Kindergeld číslo, aby si videl/a výplatné termíny.";
+"PayView_subtitle" = "Zadaj svoje Kindergeld číslo, aby si videl/a výplatné termíny: napr. 003FK456789.";
 "PayView_placeholder" = "Zadaj svoje Kindergeld číslo";
 "PayView_check" = "Zapamätať si moje Kindergeld číslo";
-"PayView_text" = "Ak už máš tak zadaj tvoje Kindergeld číslo uvedené v liste od Famillienkasse v tvare:
-
-napr. 003FK456789 .
-
-Číslo ti bude pridelené, po podaní žiadosti a nájdeš ho vpravo hore v každom dokumente od Famillienkasse";
+"PayView_text" = "Ak už máš tak zadaj tvoje Kindergeld číslo uvedené v liste od Famillienkasse.
+Ak nie tak, číslo ti bude pridelené, po podaní žiadosti a nájdeš ho vpravo hore v každom dokumente od Famillienkasse";
 "PayView_button" = "Zobraziť";
 "PayView_alertFK" = "Kindergeld číslo musí obsahovať písmená FK, napr. 003FK456789";
 "PayView_alert_count" = "Kindergeld číslo má mať presne 11 znakov, napr. 003FK456789";

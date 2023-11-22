@@ -8,6 +8,9 @@
 import SwiftUI
 
 public struct LanguageButton: View {
+    
+    var action: () -> Void
+    
  public var body: some View {
     VStack {
       Text("Sprache")
@@ -23,6 +26,8 @@ public struct LanguageButton: View {
 
 struct LanguageButton_Previews: PreviewProvider {
   static var previews: some View {
-    LanguageButton()
+      LanguageButton {
+          print("Language Button tapped")
+      }
   }
 }

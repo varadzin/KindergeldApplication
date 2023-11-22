@@ -26,14 +26,11 @@ for 4 children: 1,000 euros
 
 // MARK: PayView Strings
 "PayView_title" = "Payment Days";
-"PayView_subtitle" = "Enter your child benefit number to see the Payment Days.";
+"PayView_subtitle" = "Enter your child benefit number to see the Payment Days: e.g. 003FK456789";
 "PayView_placeholder" = "Enter your child benefit number";
 "PayView_check" = "Save my child benefit number";
-"PayView_text" = "If you already have one, enter your child benefit number listed in the letter from the Familienkasse in the form:
-
-e.g. 003FK456789 .
-
-The number will be assigned to you after submitting the application and you will find it on the top right of every document from the Famillienkasse.";
+"PayView_text" = "If you already have one, enter your child benefit number listed in the letter from the Familienkasse.
+If not, the number will be assigned to you after submitting the application and you will find it on the top right of every document from the Famillienkasse.";
 "PayView_button" = "Show payment days";
 "PayView_alertFK" = "The Kindergeld number must contain the letters FK, e.g. 003FK456789";
 "PayView_alert_count" = "Kindergeld number should have exactly 11 characters, e.g. 003FK456789";

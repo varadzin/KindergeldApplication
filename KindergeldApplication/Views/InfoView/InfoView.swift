@@ -18,26 +18,22 @@ private extension InfoView {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading) {
-                    Text("InfoView_title")
-                        .font(.title)
-                        .multilineTextAlignment(.center)
-                        .padding()
                     Text("InfoView_text")
                 }
                 .padding()
             }
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        print("Language Button tapped")
-                    } label: {
-                        LanguageButton()
-                    }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    LanguageButton {
+                        print("Language Button Tapped")
+                    }      
                 }
             }
+            .navigationTitle("InfoView_title")
         }
         .navigationViewStyle(.stack)
         .navigationBarHidden(true)
+     
     }
 }
 struct InfoView_Previews: PreviewProvider {

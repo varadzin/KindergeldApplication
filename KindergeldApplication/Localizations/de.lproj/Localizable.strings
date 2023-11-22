@@ -26,14 +26,12 @@ für 4 Kinder: 1.000 Euro
 
 // MARK: PayView Strings
 "PayView_title" = "Auszahlungstermine";
-"PayView_subtitle" = "Die Auszahlungstermine zu sehen, tragen Sie die Kindergeldnummer ein.";
+"PayView_subtitle" = "Die Auszahlungstermine zu sehen, tragen Sie die Kindergeldnummer ein: z.B. 003FK456789";
 "PayView_placeholder" = "Dein Kindergeld Nummer eintragen";
 "PayView_check" = "Mein Kindergeld Nummer merken";
-"PayView_text" = "Wenn Sie bereits eine Kindergeldnummer haben, tragen Sie im Formular die im Schreiben der Familienkasse aufgeführte Kindergeldnummer ein:
+"PayView_text" = "Wenn Sie bereits eine Kindergeldnummer haben, tragen Sie im Formular die im Schreiben der Familienkasse aufgeführte Kindergeldnummer ein.
 
-napr. 003FK456789 .
-
-Die Nummer wird Ihnen nach der Antragstellung zugeteilt und Sie finden sie oben rechts auf jedem Dokument der Familienkasse.";
+Wenn nicht, die Nummer wird Ihnen nach der Antragstellung zugeteilt und Sie finden sie oben rechts auf jedem Dokument der Familienkasse.";
 "PayView_button" = "Termine anzeigen";
 "PayView_alertFK" =  "Die Kindergeldnummer muss die Buchstaben FK enthalten, z. B. 003FK456789";
 "PayView_alert_count" = "Kindergeldnummer sollte genau 11 Zeichen haben, z.B. 003FK456789";
