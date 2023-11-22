@@ -6,20 +6,25 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct StartView: View {
-
+    
     @State private var checkmarkActive: Bool = false
     @State private var showSheet: Bool = false
     var body: some View {
         NavigationStack {
             ZStack {
-                VStack {
-                    backgroundImage
-                    disclaimer
-                    button
+                backgroundImage
+                ZStack {
+                    logo
+                    VStack {
+                        Spacer(minLength: 650)
+                        disclaimer
+                        button
+                        Spacer(minLength: 30)
+                    }
                 }
-                logo
             }
             .sheet(isPresented: $showSheet) {
                 TermsOfUseView()
@@ -29,21 +34,23 @@ struct StartView: View {
 }
 
 extension StartView {
-
     var backgroundImage: some View {
         Image("startImage")
             .resizable()
             .ignoresSafeArea()
-            .scaledToFit()
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .scaledToFill() // TODO: if !isIPad .scaledToFit()
+            .frame(maxWidth: UIDevice.isIPad ? 600 : .infinity, maxHeight: .infinity, alignment: .top)
     }
-
+    
     var logo: some View {
-        Image("logo")
-            .padding(.horizontal, 20)
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        VStack {
+            Image("logo")
+                .padding(.horizontal, 20)
+                .padding(.top, 50)
+            Spacer()
+        }
     }
-
+    
     var button: some View {
         NavigationLink {
             MainTab()
@@ -53,8 +60,9 @@ extension StartView {
         .buttonStyle(RedButtonStyle(buttonColor: checkmarkActive ? Color.customRed : .systemGray4))
         .padding(.horizontal, 10)
         //    .disabled(checkmarkActive ? false : true)
+        .frame(maxWidth: UIDevice.isIPad ? 600 : 380)
     }
-
+    
     var disclaimer: some View {
         HStack {
             Checkmark(active: checkmarkActive)
@@ -79,6 +87,12 @@ extension StartView {
         }
         .padding(.leading, 5)
         .padding(.bottom, 30)
+    }
+}
+
+extension UIDevice {
+    static var isIPad: Bool {
+        return current.userInterfaceIdiom == .pad
     }
 }
 

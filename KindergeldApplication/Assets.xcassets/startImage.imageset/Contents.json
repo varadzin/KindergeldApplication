@@ -3,6 +3,10 @@
     {
       "filename" : "startImage.jpg",
       "idiom" : "universal"
+    },
+    {
+      "filename" : "startImageiPad.jpg",
+      "idiom" : "ipad"
     }
   ],
   "info" : {
