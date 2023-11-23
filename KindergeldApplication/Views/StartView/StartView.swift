@@ -16,37 +16,38 @@ struct StartView: View {
         NavigationStack {
             ZStack {
                 backgroundImage
-                ZStack {
+                HStack {
                     logo
-                    VStack {
-                        Spacer(minLength: 650)
-                        disclaimer
-                        button
-                        Spacer(minLength: 30)
-                    }
+                    Spacer()
+                }
+                VStack {
+                    Spacer()
+                    disclaimer
+                    button
                 }
             }
-            .sheet(isPresented: $showSheet) {
-                TermsOfUseView()
-            }
+        }
+        .sheet(isPresented: $showSheet) {
+            TermsOfUseView()
         }
     }
 }
+
 
 extension StartView {
     var backgroundImage: some View {
         Image("startImage")
             .resizable()
             .ignoresSafeArea()
-            .scaledToFill() // TODO: if !isIPad .scaledToFit()
-            .frame(maxWidth: UIDevice.isIPad ? 600 : .infinity, maxHeight: .infinity, alignment: .top)
+            .scaledToFit()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     }
     
     var logo: some View {
         VStack {
             Image("logo")
                 .padding(.horizontal, 20)
-                .padding(.top, 50)
+                .padding(.top, 10)
             Spacer()
         }
     }

@@ -22,14 +22,7 @@ private extension InfoView {
                 }
                 .padding()
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    LanguageButton {
-                        print("Language Button Tapped")
-                    }      
-                }
-            }
-            .navigationTitle("InfoView_title")
+                 .navigationTitle("InfoView_title")
         }
         .navigationViewStyle(.stack)
         .navigationBarHidden(true)

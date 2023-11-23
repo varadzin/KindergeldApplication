@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29006D782B0FE2AB00C2C481 /* FormViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29006D772B0FE2AB00C2C481 /* FormViewModel2.swift */; };
 		2949156F2B0D341500CE447F /* CustomInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2949156E2B0D341500CE447F /* CustomInput.swift */; };
 		295F62BB2B0936980079497F /* DocumentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62BA2B0936980079497F /* DocumentButton.swift */; };
 		295F62BE2B093B080079497F /* ActiveButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62BD2B093B080079497F /* ActiveButtonEnum.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29006D772B0FE2AB00C2C481 /* FormViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel2.swift; sourceTree = "<group>"; };
 		2949156E2B0D341500CE447F /* CustomInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInput.swift; sourceTree = "<group>"; };
 		295F62BA2B0936980079497F /* DocumentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentButton.swift; sourceTree = "<group>"; };
 		295F62BD2B093B080079497F /* ActiveButtonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveButtonEnum.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		29A66CFE2B0E8B7A000094F0 /* FormView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView3.swift; sourceTree = "<group>"; };
 		29A66D002B0E9AE2000094F0 /* SingleToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleToggle.swift; sourceTree = "<group>"; };
 		29A66D022B0EA16F000094F0 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		29A66D252B0ECB2B000094F0 /* Kindergeld-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Kindergeld-Info.plist"; sourceTree = "<group>"; };
 		398C3F642A1109FD00F22F2A /* LanguageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButton.swift; sourceTree = "<group>"; };
 		398C3F7B2A11220B00F22F2A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		398C3F7D2A11221300F22F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 			children = (
 				39BAA4042A0D9A90006D58D3 /* FormView.swift */,
 				29A66CFC2B0E89AC000094F0 /* FormView2.swift */,
+				29006D772B0FE2AB00C2C481 /* FormViewModel2.swift */,
 				29A66CFE2B0E8B7A000094F0 /* FormView3.swift */,
 				299FC5FA2B0D3C90007A3900 /* FormViewModel.swift */,
 			);
@@ -178,6 +182,7 @@
 		39BAA3DA2A0D7290006D58D3 = {
 			isa = PBXGroup;
 			children = (
+				29A66D252B0ECB2B000094F0 /* Kindergeld-Info.plist */,
 				39BAA3E52A0D7290006D58D3 /* KindergeldApplication */,
 				39BAA3E42A0D7290006D58D3 /* Products */,
 			);
@@ -347,6 +352,7 @@
 				398C3F822A11384200F22F2A /* KindergeldTextField.swift in Sources */,
 				39BAA4012A0D9A65006D58D3 /* InfoView.swift in Sources */,
 				398C3F862A114C8500F22F2A /* RedButtonStyle.swift in Sources */,
+				29006D782B0FE2AB00C2C481 /* FormViewModel2.swift in Sources */,
 				29A66CFD2B0E89AC000094F0 /* FormView2.swift in Sources */,
 				398C3F882A11508B00F22F2A /* PayViewModel.swift in Sources */,
 				39BAA3F52A0D7988006D58D3 /* RedButton.swift in Sources */,
@@ -520,9 +526,9 @@
 				DEVELOPMENT_TEAM = XR7W533Y49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kindergeld-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -554,9 +560,9 @@
 				DEVELOPMENT_TEAM = XR7W533Y49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kindergeld-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (

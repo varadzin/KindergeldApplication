@@ -26,14 +26,7 @@ struct PayView: View {
                 }
                 .padding()
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    LanguageButton {
-                        print("Language Button Tapped")
-                    }
-                }
-            }
-            .sheet(isPresented: $viewModel.showSheet) {
+                       .sheet(isPresented: $viewModel.showSheet) {
                 PayDaysView(viewModel: PayViewModel())
             }
             .onTapGesture {

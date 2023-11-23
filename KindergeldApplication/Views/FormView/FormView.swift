@@ -23,22 +23,24 @@ struct FormView: View {
                         formTextFields
                         statusToggle
                         statusDate
-                        NextButton(destination: FormView2(viewModel: FormViewModel())) {}
+                        subtitle2
+                        formTextFields2
+                        title2
+                        bankAccount
+                        postData
+                        NextButton(destination: FormView2(viewModel: FormViewModel2())) {}
                     }
                     
                 }
                 .padding(.horizontal, 15)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    LanguageButton {
-                        print("Language Button Tapped")
-                    }        
-                }
-            }
-        }
-        .navigationViewStyle(.stack)
-    }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(false)
+   }
+   .navigationViewStyle(.stack)
+
+         
+       }
 }
 
 extension FormView {
@@ -66,10 +68,7 @@ extension FormView {
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundStyle(Color.customRed)
-            Text("Pozri vysvetlivky, kto môže žiadať o prídavky")
-                .font(.caption2)
-                .foregroundStyle(Color.label)
-        }
+                   }
         .padding(.vertical, 15)
     }
     
@@ -130,6 +129,66 @@ extension FormView {
             }
         }
         .padding(.vertical, 8)
+    }
+    
+    var subtitle2: some View {
+        VStack {
+            Text("Údaje partnera/ky, manžela/manželky")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundStyle(Color.customRed)
+            Text("Pozri vysvetlivky, kto môže žiadať o prídavky")
+                .font(.caption2)
+                .foregroundStyle(Color.label)
+        }
+        .padding(.vertical, 15)
+    }
+    
+    var formTextFields2: some View {
+        VStack {
+            CustomInput(placeholder: "Titul", text: $viewModel.womanTitle) { print("go") }
+            CustomInput(placeholder: "Krstné meno", text: $viewModel.womanName) { print("go") }
+            CustomInput(placeholder: "Priezvisko", text: $viewModel.womanSurname) { print("go") }
+            CustomInput(placeholder: "Rodné priezvisko", text: $viewModel.womanMaidenName) { print("go") }
+            CustomInput(placeholder: "Dátum narodenia - DD.MM.RRRR", text: $viewModel.womanDateOfBirth) { print("go") }
+            CustomInput(placeholder: "Miesto narodenia - mesto a štát", text: $viewModel.womanPlaceOfBirth) { print("go") }
+            CustomInput(placeholder: "Štátna príslušnosť", text: $viewModel.womanNationality) { print("go") }
+            SingleToggle(toggleText: "Adresa je rozdielna ako žiadateľa", toggleState: $viewModel.addressToggleState)
+            
+            if viewModel.addressToggleState {
+                CustomInput(placeholder: "Adresa - Ulica a číslo domu ", text: $viewModel.womanAddress) { print("go") }
+                CustomInput(placeholder: "Adresa - PSČ, mesto, štát", text: $viewModel.womanZipCity) { print("go") }
+            }
+        }
+    }
+    
+    
+    var title2: some View {
+        Text("Číslo účtu kam budú zasielané peniaze")
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .foregroundStyle(Color.customRed)
+    }
+    
+    var bankAccount: some View {
+        VStack {
+            CustomInput(placeholder: "IBAN - číslo účtu", text: $viewModel.iban) { print("go") }
+            CustomInput(placeholder: "SWIFT / BIC", text: $viewModel.bic) { print("go") }
+            CustomInput(placeholder: "Meno a priezvisko majitela účtu", text: $viewModel.holdersName) { print("go") }
+        }
+    }
+    
+    var postData: some View {
+        VStack {
+            SingleToggle(toggleText: "Poštu nezasielať žiadateľovi, ale", toggleState: $viewModel.postToggle)
+            if viewModel.postToggle {
+                CustomInput(placeholder: "Krstné meno", text: $viewModel.postName) { print("go") }
+                CustomInput(placeholder: "Priezvisko", text: $viewModel.postSurname) { print("go") }
+                CustomInput(placeholder: "Adresa - Ulica a číslo domu ", text: $viewModel.postAddress) { print("go") }
+                CustomInput(placeholder: "Adresa - PSČ, mesto, štát", text: $viewModel.postZipCity) { print("go") }
+                
+            }
+        }
     }
 }
 
