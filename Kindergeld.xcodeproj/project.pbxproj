@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		29006D782B0FE2AB00C2C481 /* FormViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29006D772B0FE2AB00C2C481 /* FormViewModel2.swift */; };
 		294861762B1134CA00A59FB1 /* CustomCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294861752B1134CA00A59FB1 /* CustomCheckmark.swift */; };
+		2948617E2B114AA700A59FB1 /* Kindergeld-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2948617D2B114AA700A59FB1 /* Kindergeld-Info.plist */; };
 		2949156F2B0D341500CE447F /* CustomInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2949156E2B0D341500CE447F /* CustomInput.swift */; };
 		295F62BB2B0936980079497F /* DocumentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62BA2B0936980079497F /* DocumentButton.swift */; };
 		295F62BE2B093B080079497F /* ActiveButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62BD2B093B080079497F /* ActiveButtonEnum.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		29006D772B0FE2AB00C2C481 /* FormViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel2.swift; sourceTree = "<group>"; };
 		294861752B1134CA00A59FB1 /* CustomCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCheckmark.swift; sourceTree = "<group>"; };
+		2948617D2B114AA700A59FB1 /* Kindergeld-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Kindergeld-Info.plist"; sourceTree = "<group>"; };
 		2949156E2B0D341500CE447F /* CustomInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInput.swift; sourceTree = "<group>"; };
 		295F62BA2B0936980079497F /* DocumentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentButton.swift; sourceTree = "<group>"; };
 		295F62BD2B093B080079497F /* ActiveButtonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveButtonEnum.swift; sourceTree = "<group>"; };
@@ -57,7 +59,6 @@
 		29A66CFE2B0E8B7A000094F0 /* FormView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView3.swift; sourceTree = "<group>"; };
 		29A66D002B0E9AE2000094F0 /* SingleToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleToggle.swift; sourceTree = "<group>"; };
 		29A66D022B0EA16F000094F0 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
-		29A66D252B0ECB2B000094F0 /* Kindergeld-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Kindergeld-Info.plist"; sourceTree = "<group>"; };
 		398C3F642A1109FD00F22F2A /* LanguageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButton.swift; sourceTree = "<group>"; };
 		398C3F7B2A11220B00F22F2A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		398C3F7D2A11221300F22F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -184,7 +185,7 @@
 		39BAA3DA2A0D7290006D58D3 = {
 			isa = PBXGroup;
 			children = (
-				29A66D252B0ECB2B000094F0 /* Kindergeld-Info.plist */,
+				2948617D2B114AA700A59FB1 /* Kindergeld-Info.plist */,
 				39BAA3E52A0D7290006D58D3 /* KindergeldApplication */,
 				39BAA3E42A0D7290006D58D3 /* Products */,
 			);
@@ -313,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2948617E2B114AA700A59FB1 /* Kindergeld-Info.plist in Resources */,
 				398C3F7A2A11220B00F22F2A /* Localizable.strings in Resources */,
 				39BAA3EE2A0D7291006D58D3 /* Preview Assets.xcassets in Resources */,
 				39BAA3EB2A0D7291006D58D3 /* Assets.xcassets in Resources */,
