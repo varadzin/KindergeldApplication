@@ -21,6 +21,20 @@ class FormViewModel2: ObservableObject {
     @Published var selectedSex: Int = 0
     @Published var child1AddressReason = ""
     @Published var noKindergeldChild1ToggleState: Bool = false
+    
+    
+    @Published var nextPersonName = ""
+    @Published var nextPersonDateOfBirth = ""
+    @Published var nextPersonAddress = ""
+    @Published var nextPersonNationality = ""
+    @Published var nextPersonInfo = ""
+    @Published var didHaveKindergeld: Int = 1
+    
+    @Published var didHaveKName = ""
+    @Published var didHaveKDateOfBirth = ""
+    @Published var didHaveKWhen = ""
+    @Published var didHaveKNameFK = ""
+    @Published var didHaveKNo = ""
 }
 
 

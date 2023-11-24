@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29006D782B0FE2AB00C2C481 /* FormViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29006D772B0FE2AB00C2C481 /* FormViewModel2.swift */; };
+		294861762B1134CA00A59FB1 /* CustomCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294861752B1134CA00A59FB1 /* CustomCheckmark.swift */; };
 		2949156F2B0D341500CE447F /* CustomInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2949156E2B0D341500CE447F /* CustomInput.swift */; };
 		295F62BB2B0936980079497F /* DocumentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62BA2B0936980079497F /* DocumentButton.swift */; };
 		295F62BE2B093B080079497F /* ActiveButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62BD2B093B080079497F /* ActiveButtonEnum.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		29006D772B0FE2AB00C2C481 /* FormViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel2.swift; sourceTree = "<group>"; };
+		294861752B1134CA00A59FB1 /* CustomCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCheckmark.swift; sourceTree = "<group>"; };
 		2949156E2B0D341500CE447F /* CustomInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInput.swift; sourceTree = "<group>"; };
 		295F62BA2B0936980079497F /* DocumentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentButton.swift; sourceTree = "<group>"; };
 		295F62BD2B093B080079497F /* ActiveButtonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveButtonEnum.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				398C3F832A113E4700F22F2A /* BigCheckmark.swift */,
 				39BAA3F92A0D87E9006D58D3 /* Colors.swift */,
 				2949156E2B0D341500CE447F /* CustomInput.swift */,
+				294861752B1134CA00A59FB1 /* CustomCheckmark.swift */,
 				29A66D002B0E9AE2000094F0 /* SingleToggle.swift */,
 			);
 			path = UIElements;
@@ -366,6 +369,7 @@
 				295F62BE2B093B080079497F /* ActiveButtonEnum.swift in Sources */,
 				39BAA3E92A0D7290006D58D3 /* StartView.swift in Sources */,
 				295F62BB2B0936980079497F /* DocumentButton.swift in Sources */,
+				294861762B1134CA00A59FB1 /* CustomCheckmark.swift in Sources */,
 				39BAA3E72A0D7290006D58D3 /* KindergeldApplicationApp.swift in Sources */,
 				398C3F8C2A1558D700F22F2A /* PayDaysView.swift in Sources */,
 				39BAA4072A0D9A9C006D58D3 /* PrintView.swift in Sources */,
