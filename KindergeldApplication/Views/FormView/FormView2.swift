@@ -28,7 +28,7 @@ struct FormView2: View {
                     childRelationship
                     nextPersonData
                     infoFromPast
-                    NextButton(destination: FormView3()) {}
+                    NextButton(destination: FormView3(viewModel: FormViewModel3())) {}
                     BackButton { dismiss() }
                 }
                 

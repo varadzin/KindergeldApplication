@@ -20,6 +20,7 @@
 		29A66CFF2B0E8B7A000094F0 /* FormView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66CFE2B0E8B7A000094F0 /* FormView3.swift */; };
 		29A66D012B0E9AE2000094F0 /* SingleToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66D002B0E9AE2000094F0 /* SingleToggle.swift */; };
 		29A66D032B0EA16F000094F0 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66D022B0EA16F000094F0 /* BackButton.swift */; };
+		29B893112B1280A80007AD4C /* FormViewModel3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B893102B1280A80007AD4C /* FormViewModel3.swift */; };
 		398C3F652A1109FD00F22F2A /* LanguageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F642A1109FD00F22F2A /* LanguageButton.swift */; };
 		398C3F7A2A11220B00F22F2A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 398C3F7C2A11220B00F22F2A /* Localizable.strings */; };
 		398C3F822A11384200F22F2A /* KindergeldTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F812A11384200F22F2A /* KindergeldTextField.swift */; };
@@ -59,6 +60,7 @@
 		29A66CFE2B0E8B7A000094F0 /* FormView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView3.swift; sourceTree = "<group>"; };
 		29A66D002B0E9AE2000094F0 /* SingleToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleToggle.swift; sourceTree = "<group>"; };
 		29A66D022B0EA16F000094F0 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		29B893102B1280A80007AD4C /* FormViewModel3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel3.swift; sourceTree = "<group>"; };
 		398C3F642A1109FD00F22F2A /* LanguageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButton.swift; sourceTree = "<group>"; };
 		398C3F7B2A11220B00F22F2A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		398C3F7D2A11221300F22F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -131,10 +133,11 @@
 			isa = PBXGroup;
 			children = (
 				39BAA4042A0D9A90006D58D3 /* FormView.swift */,
+				299FC5FA2B0D3C90007A3900 /* FormViewModel.swift */,
 				29A66CFC2B0E89AC000094F0 /* FormView2.swift */,
 				29006D772B0FE2AB00C2C481 /* FormViewModel2.swift */,
 				29A66CFE2B0E8B7A000094F0 /* FormView3.swift */,
-				299FC5FA2B0D3C90007A3900 /* FormViewModel.swift */,
+				29B893102B1280A80007AD4C /* FormViewModel3.swift */,
 			);
 			path = FormView;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				39BAA4072A0D9A9C006D58D3 /* PrintView.swift in Sources */,
 				398C3F652A1109FD00F22F2A /* LanguageButton.swift in Sources */,
 				39BAA3FC2A0D8E27006D58D3 /* TermsOfUseView.swift in Sources */,
+				29B893112B1280A80007AD4C /* FormViewModel3.swift in Sources */,
 				39BAA4032A0D9A7A006D58D3 /* PayView.swift in Sources */,
 				39BAA3F82A0D8129006D58D3 /* Checkmark.swift in Sources */,
 				29A66CFF2B0E8B7A000094F0 /* FormView3.swift in Sources */,
