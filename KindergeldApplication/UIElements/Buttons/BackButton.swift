@@ -32,7 +32,7 @@ public struct BackButton: View {
             .cornerRadius(10)
             .frame(height: 60)
             .frame(maxWidth: .infinity)
-            .padding(.bottom, 20)
+            .padding(.top, 40)
         }
     }
 }

@@ -14,6 +14,8 @@
 		295F62BB2B0936980079497F /* DocumentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62BA2B0936980079497F /* DocumentButton.swift */; };
 		295F62BE2B093B080079497F /* ActiveButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62BD2B093B080079497F /* ActiveButtonEnum.swift */; };
 		295F62C32B0AC2980079497F /* TopStepBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F62C22B0AC2980079497F /* TopStepBarView.swift */; };
+		29651D4F2B1CCD7400DC698B /* FormView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29651D4E2B1CCD7400DC698B /* FormView4.swift */; };
+		29651D512B1CF04200DC698B /* FormViewModel4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29651D502B1CF04200DC698B /* FormViewModel4.swift */; };
 		299FC5FB2B0D3C90007A3900 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FC5FA2B0D3C90007A3900 /* FormViewModel.swift */; };
 		29A66CFB2B0E8800000094F0 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66CFA2B0E8800000094F0 /* NextButton.swift */; };
 		29A66CFD2B0E89AC000094F0 /* FormView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66CFC2B0E89AC000094F0 /* FormView2.swift */; };
@@ -54,6 +56,8 @@
 		295F62BA2B0936980079497F /* DocumentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentButton.swift; sourceTree = "<group>"; };
 		295F62BD2B093B080079497F /* ActiveButtonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveButtonEnum.swift; sourceTree = "<group>"; };
 		295F62C22B0AC2980079497F /* TopStepBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStepBarView.swift; sourceTree = "<group>"; };
+		29651D4E2B1CCD7400DC698B /* FormView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView4.swift; sourceTree = "<group>"; };
+		29651D502B1CF04200DC698B /* FormViewModel4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel4.swift; sourceTree = "<group>"; };
 		299FC5FA2B0D3C90007A3900 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 		29A66CFA2B0E8800000094F0 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		29A66CFC2B0E89AC000094F0 /* FormView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView2.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				29006D772B0FE2AB00C2C481 /* FormViewModel2.swift */,
 				29A66CFE2B0E8B7A000094F0 /* FormView3.swift */,
 				29B893102B1280A80007AD4C /* FormViewModel3.swift */,
+				29651D4E2B1CCD7400DC698B /* FormView4.swift */,
+				29651D502B1CF04200DC698B /* FormViewModel4.swift */,
 			);
 			path = FormView;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 				398C3F842A113E4700F22F2A /* BigCheckmark.swift in Sources */,
 				398C3F822A11384200F22F2A /* KindergeldTextField.swift in Sources */,
 				39BAA4012A0D9A65006D58D3 /* InfoView.swift in Sources */,
+				29651D512B1CF04200DC698B /* FormViewModel4.swift in Sources */,
 				398C3F862A114C8500F22F2A /* RedButtonStyle.swift in Sources */,
 				29006D782B0FE2AB00C2C481 /* FormViewModel2.swift in Sources */,
 				29A66CFD2B0E89AC000094F0 /* FormView2.swift in Sources */,
@@ -381,6 +388,7 @@
 				398C3F652A1109FD00F22F2A /* LanguageButton.swift in Sources */,
 				39BAA3FC2A0D8E27006D58D3 /* TermsOfUseView.swift in Sources */,
 				29B893112B1280A80007AD4C /* FormViewModel3.swift in Sources */,
+				29651D4F2B1CCD7400DC698B /* FormView4.swift in Sources */,
 				39BAA4032A0D9A7A006D58D3 /* PayView.swift in Sources */,
 				39BAA3F82A0D8129006D58D3 /* Checkmark.swift in Sources */,
 				29A66CFF2B0E8B7A000094F0 /* FormView3.swift in Sources */,

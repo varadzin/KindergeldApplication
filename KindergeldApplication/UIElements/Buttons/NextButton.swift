@@ -29,7 +29,7 @@ public struct NextButton<Destination: View>: View {
             .cornerRadius(10)
             .frame(height: 60)
             .frame(maxWidth: .infinity)
-            .padding(.top, 40)
+            .padding(.bottom, 20)
         }
     }
 }
