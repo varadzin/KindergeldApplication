@@ -93,9 +93,9 @@ extension FormView4 {
         VStack {
             if viewModel.publicService == 0 {
                 CustomInput(placeholder: "Meno, priezvisko zamestnanca", text: $viewModel.nameOfServant) { print("go") }
-                CustomInput(placeholder: "Obdobie služby od-do", text: $viewModel.nameOfServant) { print("go") }
-                CustomInput(placeholder: "Meno zamestnávateľa / úradu", text: $viewModel.nameOfServant) { print("go") }
-                CustomInput(placeholder: "Názov, adresa Familkenkasse", text: $viewModel.nameOfServant) { print("go") }
+                CustomInput(placeholder: "Obdobie služby od-do", text: $viewModel.periodOfService) { print("go") }
+                CustomInput(placeholder: "Meno zamestnávateľa / úradu", text: $viewModel.nameOfServiceOffice) { print("go") }
+                CustomInput(placeholder: "Názov, adresa Familkenkasse", text: $viewModel.nameOfFamilienKasse) { print("go") }
             }
         }
     }
@@ -119,13 +119,13 @@ extension FormView4 {
     var moneyFromAbroadInfo: some View {
         VStack {
             if viewModel.moneyAbroad == 0 {
-                CustomInput(placeholder: "Meno, priezvisko poberajúcej osoby", text: $viewModel.nameOfServant) { print("go") }
-                CustomInput(placeholder: "Dátum narodenia - DD.MM.RRRR", text: $viewModel.nameOfServant) { print("go") }
-                CustomInput(placeholder: "Názov dávky", text: $viewModel.nameOfServant) { print("go") }
-                CustomInput(placeholder: "Mesačná čiastka v Euro", text: $viewModel.nameOfServant) { print("go") }
-                CustomInput(placeholder: "Obdobie poberania od-do", text: $viewModel.nameOfServant) { print("go") }
-                CustomInput(placeholder: "Názov a adresa inštitúcie posk. dávku", text: $viewModel.nameOfServant) { print("go") }
-                CustomInput(placeholder: "Spisová značka", text: $viewModel.nameOfServant) { print("go") }
+                CustomInput(placeholder: "Meno, priezvisko poberajúcej osoby", text: $viewModel.nameOfBeneficientAbroad) { print("go") }
+                CustomInput(placeholder: "Dátum narodenia - DD.MM.RRRR", text: $viewModel.dateOfBirthBeneficientAbroad) { print("go") }
+                CustomInput(placeholder: "Názov dávky", text: $viewModel.nameOfBenefitAbroad) { print("go") }
+                CustomInput(placeholder: "Mesačná čiastka v Euro", text: $viewModel.amountOfBenefitAbroad) { print("go") }
+                CustomInput(placeholder: "Obdobie poberania od-do", text: $viewModel.periodOfBenefitAbroad) { print("go") }
+                CustomInput(placeholder: "Názov a adresa inštitúcie posk. dávku", text: $viewModel.nameOfOfficeBenefitAbroad) { print("go") }
+                CustomInput(placeholder: "Spisová značka", text: $viewModel.referenceBenefitAbroad) { print("go") }
             }
         }
     }
@@ -135,15 +135,15 @@ extension FormView4 {
             Text("Byl/a jste Vy nebo partner/ka, k níž má dítě jako nezletilé vztah, v posledních 5 letech před podáním žádosti:")
                 .padding(.top, 15)
                 .fontWeight(.semibold)
-            SingleToggle(toggleText: "činný/á mimo Německo jako zaměstnanec, podnikatel, pracovník pomoci rozvojovým zemím?", toggleState: $viewModel.natoQuestion)
+            SingleToggle(toggleText: "činný/á mimo Německo jako zaměstnanec, podnikatel, pracovník pomoci rozvojovým zemím?", toggleState: $viewModel.developingCountriesHelper)
             SingleToggle(toggleText: "činný v Německu v pobočce nebo zařízení jiného státu nebo jako příslušník ozbrojených sil NATO?", toggleState: $viewModel.natoQuestion)
-            SingleToggle(toggleText: "zaměstnán v Německu na podnět zaměstnavatele se sídlem mimo Německo (kupř. osoba vyslaná na práci v zahraničí)?", toggleState: $viewModel.natoQuestion)
+            SingleToggle(toggleText: "zaměstnán v Německu na podnět zaměstnavatele se sídlem mimo Německo (kupř. osoba vyslaná na práci v zahraničí)?", toggleState: $viewModel.workAbroadHelper)
             
-            CustomInput(placeholder: "Meno, priezvisko zamestnanca", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Obdobie služby od-do", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Meno zamestnávateľa / úradu", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Adresa zamestnávateľa", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Krajina zárobkovej činnosti", text: $viewModel.nameOfServant) { print("go") }
+            CustomInput(placeholder: "Meno, priezvisko zamestnanca", text: $viewModel.nameOfHelperAbroad) { print("go") }
+            CustomInput(placeholder: "Obdobie služby od-do", text: $viewModel.periodOfHelpAbroad) { print("go") }
+            CustomInput(placeholder: "Meno zamestnávateľa / úradu", text: $viewModel.nameOfEmployerAbroad) { print("go") }
+            CustomInput(placeholder: "Adresa zamestnávateľa", text: $viewModel.addressOfEmployerAbroad) { print("go") }
+            CustomInput(placeholder: "Krajina zárobkovej činnosti", text: $viewModel.coutryOfEmployerAbroad) { print("go") }
         }
     }
     

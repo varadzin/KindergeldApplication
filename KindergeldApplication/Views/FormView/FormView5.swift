@@ -66,18 +66,18 @@ extension FormView5 {
         VStack(alignment: .leading) {
             Text("Je Váš manžel/ka, resp. životní partner/ka, v současné době nebo byl v posledních pěti letech před podáním žádosti zamestnaný?")
                 .fontWeight(.semibold)
-            Picker("", selection: $viewModel.moneyAbroad) {
+            Picker("", selection: $viewModel.spouseHasJob) {
                 Text("Áno").tag(0)
                 Text("Nie").tag(1)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding(.vertical)
             .frame(maxWidth: 360, alignment: .center)
-            CustomInput(placeholder: "Názov zamestnávateľa", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Adresa zamestnávateľa", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Obdobie trvania prac. pomeru", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Pravidelná týždenná pracovná doba", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Miesto výkonu práce", text: $viewModel.nameOfServant) { print("go") }
+            CustomInput(placeholder: "Názov zamestnávateľa", text: $viewModel.nameOfSpouseEmployer) { print("go") }
+            CustomInput(placeholder: "Adresa zamestnávateľa", text: $viewModel.addressOfSpouseEmployer) { print("go") }
+            CustomInput(placeholder: "Obdobie trvania prac. pomeru", text: $viewModel.periodSpouseEmployment) { print("go") }
+            CustomInput(placeholder: "Pravidelná týždenná pracovná doba", text: $viewModel.workingHoursSpouseEmployment) { print("go") }
+            CustomInput(placeholder: "Miesto výkonu práce", text: $viewModel.placeSpouseEmployment) { print("go") }
         }
     }
     
@@ -85,18 +85,18 @@ extension FormView5 {
         VStack(alignment: .leading) {
             Text("Je Váš manžel /ka, resp. životní partner /ka, v současné době nebo byl v posledních pěti letech před podáním žádosti  samostne zárobkovo činný (samostane zárobkovo činná osoba, fyzická osoba - podnikateľ)?")
                 .fontWeight(.semibold)
-            Picker("", selection: $viewModel.moneyAbroad) {
+            Picker("", selection: $viewModel.freelanceWorkSpouse) {
                 Text("Áno").tag(0)
                 Text("Nie").tag(1)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding(.vertical)
             .frame(maxWidth: 360, alignment: .center)
-            CustomInput(placeholder: "Uveďte formu podnikania", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Nazov", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Adresa", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Obdobbie od - do", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Pravidelná týždenná pracovná doba", text: $viewModel.nameOfServant) { print("go") }
+            CustomInput(placeholder: "Uveďte formu podnikania", text: $viewModel.typeOfSpouseFreelanceJob) { print("go") }
+            CustomInput(placeholder: "Nazov", text: $viewModel.nameOfSpouseFreelanceJob) { print("go") }
+            CustomInput(placeholder: "Adresa", text: $viewModel.addressOfSpouseFreelanceJob) { print("go") }
+            CustomInput(placeholder: "Obdobbie od - do", text: $viewModel.periodOfSpouseFreelanceJob) { print("go") }
+            CustomInput(placeholder: "Pravidelná týždenná pracovná doba", text: $viewModel.workingHoursOfSpouseFreelanceJob) { print("go") }
         }
         .padding(.top, 15)
     }
@@ -106,7 +106,7 @@ extension FormView5 {
             Text("Má/mají nebo měla/y jmenovaná/é osoba/osoby z důvodu této výdělečné činnosti v Německu sociální pojištění?")
                 .fontWeight(.semibold)
             
-            Picker("", selection: $viewModel.moneyAbroad) {
+            Picker("", selection: $viewModel.spouseSocialInsurance) {
                 Text("Áno").tag(0)
                 Text("Nie").tag(1)
             }
@@ -116,7 +116,7 @@ extension FormView5 {
             Text("Ak nie, tak uveďte dôvod:")
                 .fontWeight(.semibold)
             
-            CustomInput(placeholder: "Dovod", text: $viewModel.nameOfServant) { print("go") }
+            CustomInput(placeholder: "Dovod", text: $viewModel.reasonForNoInsuranceSpouse) { print("go") }
         }
         .padding(.top, 15)
     }
@@ -127,7 +127,7 @@ extension FormView5 {
             Text("Přerušil/a manžel/ka, partner/ka v současné době nebo v posledních pěti letech před podáním žádosti dočasně svou výdělečnou činnost kvůli:")
                 .fontWeight(.semibold)
             HStack {
-                Picker("", selection: $viewModel.moneyAbroad) {
+                Picker("", selection: $viewModel.workInteruptedSpouseUnemployed) {
                     Text("Áno").tag(0)
                     Text("Nie").tag(1)
                 }
@@ -137,7 +137,7 @@ extension FormView5 {
                 Text("nezamestnanosti")
             }
             HStack {
-                Picker("", selection: $viewModel.moneyAbroad) {
+                Picker("", selection: $viewModel.workInteruptedSpouseIllnes) {
                     Text("Áno").tag(0)
                     Text("Nie").tag(1)
                 }
@@ -147,7 +147,7 @@ extension FormView5 {
                 Text("nemoci")
             }
             HStack {
-                Picker("", selection: $viewModel.moneyAbroad) {
+                Picker("", selection: $viewModel.workInteruptedSpouseMaternity) {
                     Text("Áno").tag(0)
                     Text("Nie").tag(1)
                 }
@@ -158,7 +158,7 @@ extension FormView5 {
             }
             
             HStack {
-                Picker("", selection: $viewModel.moneyAbroad) {
+                Picker("", selection: $viewModel.workInteruptedSpouseChild) {
                     Text("Áno").tag(0)
                     Text("Nie").tag(1)
                 }
@@ -168,7 +168,7 @@ extension FormView5 {
                 Text("vychovy deti")
             }
             HStack {
-                Picker("", selection: $viewModel.moneyAbroad) {
+                Picker("", selection: $viewModel.workInteruptedSpouseWorkAccident) {
                     Text("Áno").tag(0)
                     Text("Nie").tag(1)
                 }
@@ -186,7 +186,7 @@ extension FormView5 {
         VStack(alignment: .leading) {
             Text("Pobírá nebo pobíral/a manžel/ka, partner/ka na základě tohoto přerušení nějakou peněžitou dávku?")
                 .fontWeight(.semibold)
-            Picker("", selection: $viewModel.moneyAbroad) {
+            Picker("", selection: $viewModel.spouseHasBenefit) {
                 Text("Áno").tag(0)
                 Text("Nie").tag(1)
             }
@@ -194,25 +194,24 @@ extension FormView5 {
             .padding(.vertical)
             .frame(maxWidth: 360, alignment: .center)
             Text("O jakou peněžitou dávku se jedná?")
-            CustomInput(placeholder: "Názov dávky", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Názov úradu poskytujúceho dávku", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Obdobie poskytovania dávky od-do", text: $viewModel.nameOfServant) { print("go") }
+            CustomInput(placeholder: "Názov dávky", text: $viewModel.nameOfSpouseBenefit) { print("go") }
+            CustomInput(placeholder: "Názov úradu poskytujúceho dávku", text: $viewModel.whoGivesSpouseBenefit) { print("go") }
+            CustomInput(placeholder: "Obdobie poskytovania dávky od-do", text: $viewModel.periodOfSpouseBenefit) { print("go") }
             Text("Pobírá Váš manžel, resp. životní partner nebo jiná osoba, v současné době nebo pobíral/a v posledních pěti letech před podáním žádosti důchod (důchody) nebo dávky sociálního zabezpečení, resp. bylo o toto zažádáno?")
                 .fontWeight(.semibold)
                 .padding(.top, 15)
-            Picker("", selection: $viewModel.moneyAbroad) {
+            Picker("", selection: $viewModel.spouseRetirementBenefit) {
                 Text("Áno").tag(0)
                 Text("Nie").tag(1)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding(.vertical)
             .frame(maxWidth: 360, alignment: .center)
-            CustomInput(placeholder: "Meno príjímateľa dávky", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Priezvisko príjímateľa dávky", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Dátum narodenia príjímateľa dávky", text: $viewModel.nameOfServant) { print("go") }
-            
-            CustomInput(placeholder: "Názov úradu poskytujúceho dávku", text: $viewModel.nameOfServant) { print("go") }
-            CustomInput(placeholder: "Obdobie vyplácania dávky", text: $viewModel.nameOfServant) { print("go") }
+            CustomInput(placeholder: "Meno príjímateľa dávky", text: $viewModel.nameWhoBecomesBenefitSpouse) { print("go") }
+            CustomInput(placeholder: "Priezvisko príjímateľa dávky", text: $viewModel.surenameWhoBecomesBenefitSpouse) { print("go") }
+            CustomInput(placeholder: "Dátum narodenia príjímateľa dávky", text: $viewModel.dateOfBirthWhoBecomesBenefitSpouse) { print("go") }
+            CustomInput(placeholder: "Názov úradu poskytujúceho dávku", text: $viewModel.nameOfOfficeGivesBenefitSpouse) { print("go") }
+            CustomInput(placeholder: "Obdobie vyplácania dávky", text: $viewModel.periodBenefitSpouse) { print("go") }
         }
         .padding(.top, 15)
     }
