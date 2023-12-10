@@ -23,6 +23,9 @@
 		29A66D012B0E9AE2000094F0 /* SingleToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66D002B0E9AE2000094F0 /* SingleToggle.swift */; };
 		29A66D032B0EA16F000094F0 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A66D022B0EA16F000094F0 /* BackButton.swift */; };
 		29B893112B1280A80007AD4C /* FormViewModel3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B893102B1280A80007AD4C /* FormViewModel3.swift */; };
+		29C64CFC2B25A9D000AAA4E7 /* FormView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C64CFB2B25A9D000AAA4E7 /* FormView5.swift */; };
+		29C64CFE2B25A9EF00AAA4E7 /* FormViewModel5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C64CFD2B25A9EF00AAA4E7 /* FormViewModel5.swift */; };
+		29C64D002B25AEEC00AAA4E7 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C64CFF2B25AEEC00AAA4E7 /* SaveButton.swift */; };
 		398C3F652A1109FD00F22F2A /* LanguageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F642A1109FD00F22F2A /* LanguageButton.swift */; };
 		398C3F7A2A11220B00F22F2A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 398C3F7C2A11220B00F22F2A /* Localizable.strings */; };
 		398C3F822A11384200F22F2A /* KindergeldTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C3F812A11384200F22F2A /* KindergeldTextField.swift */; };
@@ -65,6 +68,9 @@
 		29A66D002B0E9AE2000094F0 /* SingleToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleToggle.swift; sourceTree = "<group>"; };
 		29A66D022B0EA16F000094F0 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		29B893102B1280A80007AD4C /* FormViewModel3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel3.swift; sourceTree = "<group>"; };
+		29C64CFB2B25A9D000AAA4E7 /* FormView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView5.swift; sourceTree = "<group>"; };
+		29C64CFD2B25A9EF00AAA4E7 /* FormViewModel5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel5.swift; sourceTree = "<group>"; };
+		29C64CFF2B25AEEC00AAA4E7 /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
 		398C3F642A1109FD00F22F2A /* LanguageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButton.swift; sourceTree = "<group>"; };
 		398C3F7B2A11220B00F22F2A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		398C3F7D2A11221300F22F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 			children = (
 				39BAA3F42A0D7988006D58D3 /* RedButton.swift */,
 				29A66CFA2B0E8800000094F0 /* NextButton.swift */,
+				29C64CFF2B25AEEC00AAA4E7 /* SaveButton.swift */,
 				29A66D022B0EA16F000094F0 /* BackButton.swift */,
 				398C3F642A1109FD00F22F2A /* LanguageButton.swift */,
 				295F62BA2B0936980079497F /* DocumentButton.swift */,
@@ -144,6 +151,8 @@
 				29B893102B1280A80007AD4C /* FormViewModel3.swift */,
 				29651D4E2B1CCD7400DC698B /* FormView4.swift */,
 				29651D502B1CF04200DC698B /* FormViewModel4.swift */,
+				29C64CFB2B25A9D000AAA4E7 /* FormView5.swift */,
+				29C64CFD2B25A9EF00AAA4E7 /* FormViewModel5.swift */,
 			);
 			path = FormView;
 			sourceTree = "<group>";
@@ -370,10 +379,13 @@
 				29006D782B0FE2AB00C2C481 /* FormViewModel2.swift in Sources */,
 				29A66CFD2B0E89AC000094F0 /* FormView2.swift in Sources */,
 				398C3F882A11508B00F22F2A /* PayViewModel.swift in Sources */,
+				29C64D002B25AEEC00AAA4E7 /* SaveButton.swift in Sources */,
+				29C64CFC2B25A9D000AAA4E7 /* FormView5.swift in Sources */,
 				39BAA3F52A0D7988006D58D3 /* RedButton.swift in Sources */,
 				39BAA4052A0D9A90006D58D3 /* FormView.swift in Sources */,
 				39BAA3FA2A0D87E9006D58D3 /* Colors.swift in Sources */,
 				295F62C32B0AC2980079497F /* TopStepBarView.swift in Sources */,
+				29C64CFE2B25A9EF00AAA4E7 /* FormViewModel5.swift in Sources */,
 				299FC5FB2B0D3C90007A3900 /* FormViewModel.swift in Sources */,
 				398C3F8A2A142B4600F22F2A /* CustomTextField.swift in Sources */,
 				29A66D032B0EA16F000094F0 /* BackButton.swift in Sources */,
@@ -538,10 +550,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"KindergeldApplication/Preview Content\"";
-				DEVELOPMENT_TEAM = XR7W533Y49;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kindergeld-Info.plist";
@@ -572,10 +584,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"KindergeldApplication/Preview Content\"";
-				DEVELOPMENT_TEAM = XR7W533Y49;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kindergeld-Info.plist";
