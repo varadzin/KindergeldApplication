@@ -1,0 +1,2 @@
+
+The Kindergeld application helps applicants for child benefits in Germany, especially foreigners working in Germany, correctly fill out the required forms. It guides them through the entire application process in a simple manner and explains complex questions found in the application. The result of the completed application will be a PDF File, that the user can print and send, or directly submit the application electronically from the app.
