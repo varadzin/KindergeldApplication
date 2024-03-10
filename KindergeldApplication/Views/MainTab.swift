@@ -32,6 +32,11 @@ struct MainTab: View {
           Label("MainTab_print", systemImage: "doc.badge.arrow.up")
         }
         .tag(3)
+        SettingsView()
+        .tabItem {
+          Label("Settings", systemImage: "gear")
+        }
+        .tag(4)
     }
   }
 }

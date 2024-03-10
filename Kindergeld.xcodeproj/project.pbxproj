@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29006D782B0FE2AB00C2C481 /* FormViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29006D772B0FE2AB00C2C481 /* FormViewModel2.swift */; };
+		291175512B9E307F002B6A63 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291175502B9E307F002B6A63 /* SettingsView.swift */; };
 		294861762B1134CA00A59FB1 /* CustomCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294861752B1134CA00A59FB1 /* CustomCheckmark.swift */; };
 		2948617E2B114AA700A59FB1 /* Kindergeld-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2948617D2B114AA700A59FB1 /* Kindergeld-Info.plist */; };
 		2949156F2B0D341500CE447F /* CustomInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2949156E2B0D341500CE447F /* CustomInput.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		29006D772B0FE2AB00C2C481 /* FormViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel2.swift; sourceTree = "<group>"; };
+		291175502B9E307F002B6A63 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		294861752B1134CA00A59FB1 /* CustomCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCheckmark.swift; sourceTree = "<group>"; };
 		2948617D2B114AA700A59FB1 /* Kindergeld-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Kindergeld-Info.plist"; sourceTree = "<group>"; };
 		2949156E2B0D341500CE447F /* CustomInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInput.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				39BAA4002A0D9A65006D58D3 /* InfoView.swift */,
+				291175502B9E307F002B6A63 /* SettingsView.swift */,
 			);
 			path = InfoView;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				398C3F882A11508B00F22F2A /* PayViewModel.swift in Sources */,
 				29C64D002B25AEEC00AAA4E7 /* SaveButton.swift in Sources */,
 				29C64CFC2B25A9D000AAA4E7 /* FormView5.swift in Sources */,
+				291175512B9E307F002B6A63 /* SettingsView.swift in Sources */,
 				39BAA3F52A0D7988006D58D3 /* RedButton.swift in Sources */,
 				39BAA4052A0D9A90006D58D3 /* FormView.swift in Sources */,
 				39BAA3FA2A0D87E9006D58D3 /* Colors.swift in Sources */,
@@ -550,10 +554,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"KindergeldApplication/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XR7W533Y49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kindergeld-Info.plist";
@@ -584,10 +588,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"KindergeldApplication/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XR7W533Y49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kindergeld-Info.plist";
