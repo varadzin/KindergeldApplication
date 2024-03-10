@@ -34,7 +34,7 @@ struct MainTab: View {
         .tag(3)
         SettingsView()
         .tabItem {
-          Label("Settings", systemImage: "gear")
+          Label("Nastavenia", systemImage: "gear")
         }
         .tag(4)
     }
